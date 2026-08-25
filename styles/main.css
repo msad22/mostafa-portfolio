@@ -527,6 +527,7 @@ ul { list-style: none; }
   -webkit-user-select: none;
   cursor: ew-resize;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  container-type: inline-size;
 }
 
 .comparison-img-layer {
@@ -559,7 +560,7 @@ ul { list-style: none; }
   left: 0;
   height: 100%;
   max-width: none;
-  width: 100%;
+  width: 100cqw;
   object-fit: cover;
 }
 
@@ -890,4 +891,45 @@ ul { list-style: none; }
   color: var(--ink-faint);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+/* ==========================================================================
+   9. INFINITE MARQUEE
+   ========================================================================== */
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+  display: flex;
+}
+.marquee-mask-left, .marquee-mask-right {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-mask-left {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-elevated), transparent);
+}
+.marquee-mask-right {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-elevated), transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 30px;
+  animation: marquee-scroll 40s linear infinite;
+}
+.marquee-item {
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  font-size: 1rem;
+  white-space: nowrap;
 }

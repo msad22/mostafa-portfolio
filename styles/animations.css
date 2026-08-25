@@ -173,3 +173,11 @@
 .float-animation {
   animation: float 4s ease-in-out infinite;
 }
+@keyframes partners-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 30px)); }
+}
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 15px)); }
+}
