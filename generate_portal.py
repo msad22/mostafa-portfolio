@@ -194,78 +194,6 @@ def build_index():
     </div>
   </section>
 
-  <!-- 3. CORE VALUE PILLARS (3D TILT CARDS) -->
-  <section class="section-wrapper">
-    <div class="container">
-      <div class="section-heading-block" style="text-align:center;">
-        <span class="label gold-text" data-en="Core Pillars" data-ar="ركائز القوة الهندسية">Core Pillars</span>
-        <h2 class="section-heading-title" data-en="Engineering Precision Meets Commercial Strategy" data-ar="دقة الهندسة تلتقي مع الاستراتيجية التجارية">Engineering Precision Meets Commercial Strategy</h2>
-      </div>
-
-      <div class="tilt-cards-grid">
-        <div class="tilt-card-item">
-          <div class="tilt-icon-box"><i class="fas fa-gem"></i></div>
-          <h3 class="tilt-card-title" data-en="Value Engineering" data-ar="هندسة القيمة">Value Engineering</h3>
-          <p class="tilt-card-desc" data-en="Delivered SAR 150M+ verified savings across chiller plants, piping networks, and electrical infrastructure without compromising specifications." data-ar="تحقيق وفورات مثبتة تجاوزت 150 مليون ريال في محطات التبريد، الشبكات، والأنظمة الكهربائية دون المساس بالمواصفات.">Delivered SAR 150M+ verified savings across chiller plants, piping networks, and electrical infrastructure without compromising specifications.</p>
-        </div>
-
-        <div class="tilt-card-item">
-          <div class="tilt-icon-box" style="color:var(--accent-cyan);border-color:rgba(6,182,212,0.3);background:rgba(6,182,212,0.1);"><i class="fas fa-file-contract"></i></div>
-          <h3 class="tilt-card-title" data-en="FIDIC Subcontracts" data-ar="عقود الفيديك والباطن">FIDIC Subcontracts</h3>
-          <p class="tilt-card-desc" data-en="Formulating airtight back-to-back agreements, risk mitigation clauses, warranty terms, and milestone payment schedules." data-ar="صياغة عقود باطن متطابقة مع العقد الرئيسي (Back-to-Back) وضبط جداول الدفعات والضمانات البنكية.">Formulating airtight back-to-back agreements, risk mitigation clauses, warranty terms, and milestone payment schedules.</p>
-        </div>
-
-        <div class="tilt-card-item">
-          <div class="tilt-icon-box"><i class="fas fa-globe-africa"></i></div>
-          <h3 class="tilt-card-title" data-en="Global Supply Chains" data-ar="سلاسل التوريد الدولية">Global Supply Chains</h3>
-          <p class="tilt-card-desc" data-en="Direct manufacturer relations across Europe, Gulf, and Asia for chillers, heavy transformers, pumps, and fire protection gear." data-ar="قنوات استيراد مباشرة مع كبرى المصانع العالمية في أوروبا والخليج للمعدات الثقيلة ومحطات الضخ.">Direct manufacturer relations across Europe, Gulf, and Asia for chillers, heavy transformers, pumps, and fire protection gear.</p>
-        </div>
-
-        <div class="tilt-card-item">
-          <div class="tilt-icon-box" style="color:var(--accent-cyan);border-color:rgba(6,182,212,0.3);background:rgba(6,182,212,0.1);"><i class="fas fa-chart-line"></i></div>
-          <h3 class="tilt-card-title" data-en="ERP & Governance" data-ar="أنظمة ERP وحوكمة الشراء">ERP & Governance</h3>
-          <p class="tilt-card-desc" data-en="End-to-end alignment with Oracle ERP, SAP MM, and Primavera P6 critical paths ensuring zero material delivery delays." data-ar="ربط دورة المشتريات بالمسار الحرج في Primavera P6 وأنظمة Oracle و SAP لضمان التوريد دون تأخير.">End-to-end alignment with Oracle ERP, SAP MM, and Primavera P6 critical paths ensuring zero material delivery delays.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. PROCUREMENT METHODOLOGY (Replaced Slider) -->
-  <section class="section-wrapper" style="background:rgba(17, 24, 39, 0.4);">
-    <div class="container">
-      <div class="section-heading-block" style="text-align:center;">
-        <span class="label cyan-text" data-en="Workflow & Methodology" data-ar="منهجية العمل">Workflow & Methodology</span>
-        <h2 class="section-heading-title" data-en="The MEP Procurement Lifecycle" data-ar="دورة حياة المشتريات الهندسية">The MEP Procurement Lifecycle</h2>
-        <p style="color:var(--ink-dim);max-width:600px;margin:12px auto 0;" data-en="A rigorous 4-step framework guaranteeing technical compliance, cost optimization, and on-time delivery." data-ar="إطار عمل صارم من 4 خطوات يضمن المطابقة الفنية، وتقليل التكاليف، والتسليم في الموعد المحدد.">A rigorous 4-step framework guaranteeing technical compliance, cost optimization, and on-time delivery.</p>
-      </div>
-
-      <div class="workflow-grid">
-        <div class="workflow-step">
-          <div class="workflow-icon"><i class="fas fa-search-dollar"></i></div>
-          <h3 class="workflow-title" data-en="1. BOQ & Audit" data-ar="1. حصر وتدقيق الكميات">1. BOQ & Audit</h3>
-          <p class="workflow-desc" data-en="Comprehensive quantity takeoff and gap analysis against initial tender drawings." data-ar="حصر كميات دقيق ومطابقته مع المخططات ومستندات الطرح لتلافي العجوزات.">Comprehensive quantity takeoff and gap analysis against initial tender drawings.</p>
-        </div>
-        <div class="workflow-step">
-          <div class="workflow-icon"><i class="fas fa-random"></i></div>
-          <h3 class="workflow-title" data-en="2. Value Engineering" data-ar="2. هندسة القيمة">2. Value Engineering</h3>
-          <p class="workflow-desc" data-en="Identifying technical alternatives that reduce cost while maintaining consultant specs." data-ar="طرح بدائل فنية تقلل التكلفة الإجمالية مع الحفاظ التام على مواصفات واعتماد الاستشاري.">Identifying technical alternatives that reduce cost while maintaining consultant specs.</p>
-        </div>
-        <div class="workflow-step">
-          <div class="workflow-icon"><i class="fas fa-comments-dollar"></i></div>
-          <h3 class="workflow-title" data-en="3. Vendor Negotiation" data-ar="3. التفاوض المالي والفني">3. Vendor Negotiation</h3>
-          <p class="workflow-desc" data-en="Commercial leveling and aggressive back-to-back negotiation with global suppliers." data-ar="مقارنة العروض وتفريغها، وإدارة مفاوضات حازمة مع الموردين لتحقيق أعلى وفر.">Commercial leveling and aggressive back-to-back negotiation with global suppliers.</p>
-        </div>
-        <div class="workflow-step">
-          <div class="workflow-icon"><i class="fas fa-file-signature"></i></div>
-          <h3 class="workflow-title" data-en="4. Contract & Delivery" data-ar="4. التعاقد والتوريد">4. Contract & Delivery</h3>
-          <p class="workflow-desc" data-en="Drafting FIDIC-aligned POs and subcontracts, ensuring zero timeline delays." data-ar="صياغة عقود وأوامر شراء صارمة لحماية المشروع وضمان التدفق الزمني للمواد.">Drafting FIDIC-aligned POs and subcontracts, ensuring zero timeline delays.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
   <!-- 7. ABOUT & PROFESSIONAL BACKGROUND (Moved from separate page) -->
   <section id="about" class="section-wrapper">
     <div class="container">
@@ -478,6 +406,76 @@ def build_services():
       <p class="page-intro-subtitle" data-en="Comprehensive procurement engineering, cost optimization, contract negotiation, and freelance advisory for contracting firms and developers." data-ar="حزم خدمات شاملة في هندسة المشتريات، دراسة التكاليف، صياغة العقود، واستشارات الفريلانس لكبرى شركات التطوير والمقاولات.">Comprehensive procurement engineering, cost optimization, contract negotiation, and freelance advisory for contracting firms and developers.</p>
     </div>
   </header>
+
+  <!-- 3. CORE VALUE PILLARS (3D TILT CARDS) -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="section-heading-block" style="text-align:center;">
+        <span class="label gold-text" data-en="Core Pillars" data-ar="ركائز القوة الهندسية">Core Pillars</span>
+        <h2 class="section-heading-title" data-en="Engineering Precision Meets Commercial Strategy" data-ar="دقة الهندسة تلتقي مع الاستراتيجية التجارية">Engineering Precision Meets Commercial Strategy</h2>
+      </div>
+
+      <div class="tilt-cards-grid">
+        <div class="tilt-card-item">
+          <div class="tilt-icon-box"><i class="fas fa-gem"></i></div>
+          <h3 class="tilt-card-title" data-en="Value Engineering" data-ar="هندسة القيمة">Value Engineering</h3>
+          <p class="tilt-card-desc" data-en="Delivered SAR 150M+ verified savings across chiller plants, piping networks, and electrical infrastructure without compromising specifications." data-ar="تحقيق وفورات مثبتة تجاوزت 150 مليون ريال في محطات التبريد، الشبكات، والأنظمة الكهربائية دون المساس بالمواصفات.">Delivered SAR 150M+ verified savings across chiller plants, piping networks, and electrical infrastructure without compromising specifications.</p>
+        </div>
+
+        <div class="tilt-card-item">
+          <div class="tilt-icon-box" style="color:var(--accent-cyan);border-color:rgba(6,182,212,0.3);background:rgba(6,182,212,0.1);"><i class="fas fa-file-contract"></i></div>
+          <h3 class="tilt-card-title" data-en="FIDIC Subcontracts" data-ar="عقود الفيديك والباطن">FIDIC Subcontracts</h3>
+          <p class="tilt-card-desc" data-en="Formulating airtight back-to-back agreements, risk mitigation clauses, warranty terms, and milestone payment schedules." data-ar="صياغة عقود باطن متطابقة مع العقد الرئيسي (Back-to-Back) وضبط جداول الدفعات والضمانات البنكية.">Formulating airtight back-to-back agreements, risk mitigation clauses, warranty terms, and milestone payment schedules.</p>
+        </div>
+
+        <div class="tilt-card-item">
+          <div class="tilt-icon-box"><i class="fas fa-globe-africa"></i></div>
+          <h3 class="tilt-card-title" data-en="Global Supply Chains" data-ar="سلاسل التوريد الدولية">Global Supply Chains</h3>
+          <p class="tilt-card-desc" data-en="Direct manufacturer relations across Europe, Gulf, and Asia for chillers, heavy transformers, pumps, and fire protection gear." data-ar="قنوات استيراد مباشرة مع كبرى المصانع العالمية في أوروبا والخليج للمعدات الثقيلة ومحطات الضخ.">Direct manufacturer relations across Europe, Gulf, and Asia for chillers, heavy transformers, pumps, and fire protection gear.</p>
+        </div>
+
+        <div class="tilt-card-item">
+          <div class="tilt-icon-box" style="color:var(--accent-cyan);border-color:rgba(6,182,212,0.3);background:rgba(6,182,212,0.1);"><i class="fas fa-chart-line"></i></div>
+          <h3 class="tilt-card-title" data-en="ERP & Governance" data-ar="أنظمة ERP وحوكمة الشراء">ERP & Governance</h3>
+          <p class="tilt-card-desc" data-en="End-to-end alignment with Oracle ERP, SAP MM, and Primavera P6 critical paths ensuring zero material delivery delays." data-ar="ربط دورة المشتريات بالمسار الحرج في Primavera P6 وأنظمة Oracle و SAP لضمان التوريد دون تأخير.">End-to-end alignment with Oracle ERP, SAP MM, and Primavera P6 critical paths ensuring zero material delivery delays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PROCUREMENT METHODOLOGY (Replaced Slider) -->
+  <section class="section-wrapper" style="background:rgba(17, 24, 39, 0.4);">
+    <div class="container">
+      <div class="section-heading-block" style="text-align:center;">
+        <span class="label cyan-text" data-en="Workflow & Methodology" data-ar="منهجية العمل">Workflow & Methodology</span>
+        <h2 class="section-heading-title" data-en="The MEP Procurement Lifecycle" data-ar="دورة حياة المشتريات الهندسية">The MEP Procurement Lifecycle</h2>
+        <p style="color:var(--ink-dim);max-width:600px;margin:12px auto 0;" data-en="A rigorous 4-step framework guaranteeing technical compliance, cost optimization, and on-time delivery." data-ar="إطار عمل صارم من 4 خطوات يضمن المطابقة الفنية، وتقليل التكاليف، والتسليم في الموعد المحدد.">A rigorous 4-step framework guaranteeing technical compliance, cost optimization, and on-time delivery.</p>
+      </div>
+
+      <div class="workflow-grid">
+        <div class="workflow-step">
+          <div class="workflow-icon"><i class="fas fa-search-dollar"></i></div>
+          <h3 class="workflow-title" data-en="1. BOQ & Audit" data-ar="1. حصر وتدقيق الكميات">1. BOQ & Audit</h3>
+          <p class="workflow-desc" data-en="Comprehensive quantity takeoff and gap analysis against initial tender drawings." data-ar="حصر كميات دقيق ومطابقته مع المخططات ومستندات الطرح لتلافي العجوزات.">Comprehensive quantity takeoff and gap analysis against initial tender drawings.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="workflow-icon"><i class="fas fa-random"></i></div>
+          <h3 class="workflow-title" data-en="2. Value Engineering" data-ar="2. هندسة القيمة">2. Value Engineering</h3>
+          <p class="workflow-desc" data-en="Identifying technical alternatives that reduce cost while maintaining consultant specs." data-ar="طرح بدائل فنية تقلل التكلفة الإجمالية مع الحفاظ التام على مواصفات واعتماد الاستشاري.">Identifying technical alternatives that reduce cost while maintaining consultant specs.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="workflow-icon"><i class="fas fa-comments-dollar"></i></div>
+          <h3 class="workflow-title" data-en="3. Vendor Negotiation" data-ar="3. التفاوض المالي والفني">3. Vendor Negotiation</h3>
+          <p class="workflow-desc" data-en="Commercial leveling and aggressive back-to-back negotiation with global suppliers." data-ar="مقارنة العروض وتفريغها، وإدارة مفاوضات حازمة مع الموردين لتحقيق أعلى وفر.">Commercial leveling and aggressive back-to-back negotiation with global suppliers.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="workflow-icon"><i class="fas fa-file-signature"></i></div>
+          <h3 class="workflow-title" data-en="4. Contract & Delivery" data-ar="4. التعاقد والتوريد">4. Contract & Delivery</h3>
+          <p class="workflow-desc" data-en="Drafting FIDIC-aligned POs and subcontracts, ensuring zero timeline delays." data-ar="صياغة عقود وأوامر شراء صارمة لحماية المشروع وضمان التدفق الزمني للمواد.">Drafting FIDIC-aligned POs and subcontracts, ensuring zero timeline delays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section-wrapper">
     <div class="container">
