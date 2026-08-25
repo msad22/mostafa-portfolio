@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant | SAR 2.63B+ Mega-Projects Experience">
+    <meta name="keywords" content="MEP Procurement, Construction, Saudi Arabia, Egypt, Portfolio, Freelance Consultant, Engineering">
+    <meta name="author" content="Eng. Mostafa Abdelghany">
+    <title>Project Showcase & Gallery — Eng. Mostafa Abdelghany</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+
+    <!-- ============ GLOBAL NAVBAR ============ -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">M</span><span class="logo-dot">.</span><span class="logo-text">A</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link " data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="about.html" class="nav-link " data-en="About" data-ar="نبذة عني">About</a></li>
+                <li><a href="services.html" class="nav-link " data-en="Services & Freelance" data-ar="الخدمات والفريلانس">Services & Freelance</a></li>
+                <li><a href="projects.html" class="nav-link active" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                <li><a href="software.html" class="nav-link " data-en="Software Stack" data-ar="البرامج والأدوات">Software Stack</a></li>
+                <li><a href="experience.html" class="nav-link " data-en="Experience" data-ar="المسيرة المهنية">Experience</a></li>
+                <li><a href="certificates.html" class="nav-link " data-en="Certificates" data-ar="الشهادات">Certificates</a></li>
+                <li><a href="contact.html" class="nav-link " data-en="Contact" data-ar="تواصل وتعاقد">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="nav-btn" title="Toggle Language">
+                    <span>AR</span>
+                </button>
+                <button id="theme-toggle" class="nav-btn" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-sm btn-primary magnetic-btn nav-cta-btn" style="padding: 8px 16px; font-size: 0.82rem;">
+                    <i class="fas fa-briefcase"></i> <span data-en="Hire Me" data-ar="طلب استشارة">Hire Me</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-detail-hero">
+        <div class="container">
+            <a href="projects.html" class="back-to-projects-btn magnetic-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span data-en="Back to All Projects" data-ar="الرجوع إلى دليل المشاريع">Back to All Projects</span>
+            </a>
+
+            <div style="font-size: 0.85rem; color: var(--accent-teal); font-weight: 700; text-transform: uppercase; margin-bottom: 8px;" id="project-detail-sector">
+                Sector
+            </div>
+
+            <h1 class="project-detail-title" id="project-detail-title">Project Title</h1>
+
+            <div class="project-detail-meta-bar">
+                <span><i class="fas fa-building"></i> <span id="project-detail-company">Company</span></span>
+                <span><i class="fas fa-user-tie"></i> <span id="project-detail-role">Role</span></span>
+                <span><i class="fas fa-calendar"></i> <span id="project-detail-period">Period</span></span>
+                <span><i class="fas fa-map-marker-alt"></i> <span id="project-detail-location">Location</span></span>
+            </div>
+
+            <!-- High-Res Interactive Gallery Component -->
+            <div class="project-gallery-wrapper animate-on-scroll">
+                <div class="main-image-display" id="gallery-main-container">
+                    <img src="" alt="Project Photo" id="gallery-main-img">
+                    <button class="gallery-fullscreen-btn" id="gallery-fullscreen-btn" title="View Fullscreen">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                    <button class="gallery-nav-btn gallery-prev" id="gallery-prev-btn" aria-label="Previous Photo">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-nav-btn gallery-next" id="gallery-next-btn" aria-label="Next Photo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Thumbnails Strip -->
+                <div class="gallery-thumbnails-strip" id="gallery-thumbs-container"></div>
+            </div>
+
+            <!-- Project Details & Sidebar -->
+            <div class="project-sheet-grid">
+                <!-- Main Body -->
+                <div class="project-details-body animate-on-scroll">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--gold-primary); margin-bottom: 16px;">
+                        <span data-en="Project Overview & Engineering Leadership" data-ar="نظرة عامة والقيادة الهندسية للمشروع">Project Overview & Engineering Leadership</span>
+                    </h3>
+                    <p id="project-detail-desc" style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 35px;"></p>
+
+                    <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--gold-primary); margin-bottom: 20px;">
+                        <span data-en="MEP Procurement Scope of Work" data-ar="نطاق أعمال مشتريات الـ MEP">MEP Procurement Scope of Work</span>
+                    </h3>
+                    <div id="project-mep-scope-container"></div>
+                </div>
+
+                <!-- Sidebar Metadata -->
+                <div class="project-sidebar-meta animate-on-scroll">
+                    <h4 style="font-size: 1.2rem; font-weight: 700; color: var(--gold-primary); margin-bottom: 20px; border-bottom: 1px solid rgba(196,163,90,0.2); padding-bottom: 10px;">
+                        <span data-en="Project Data Sheet" data-ar="بطاقة بيانات المشروع">Project Data Sheet</span>
+                    </h4>
+
+                    <div class="sidebar-meta-item">
+                        <span class="sidebar-meta-label"><i class="fas fa-coins"></i> <span data-en="Project Value" data-ar="القيمة المالية">Project Value</span></span>
+                        <div class="sidebar-meta-val gold-text" id="project-detail-value">-</div>
+                    </div>
+
+                    <div class="sidebar-meta-item">
+                        <span class="sidebar-meta-label"><i class="fas fa-handshake"></i> <span data-en="Client / Owner" data-ar="المالك / العميل">Client / Owner</span></span>
+                        <div class="sidebar-meta-val" id="project-detail-client">-</div>
+                    </div>
+
+                    <div class="sidebar-meta-item">
+                        <span class="sidebar-meta-label"><i class="fas fa-users"></i> <span data-en="Key Stakeholders" data-ar="الشركاء والاستشاريون">Key Stakeholders</span></span>
+                        <div id="project-stakeholders-container" style="margin-top: 8px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next/Prev Pagination -->
+            <div class="project-pagination-bar animate-on-scroll">
+                <a href="#" id="prev-project-btn" class="nav-proj-btn magnetic-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span class="proj-btn-label">Previous Project</span>
+                </a>
+                <a href="#" id="next-project-btn" class="nav-proj-btn magnetic-btn">
+                    <span class="proj-btn-label">Next Project</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <button class="lightbox-close-btn" id="lightbox-close-btn">&times;</button>
+        <img src="" alt="Fullscreen Lightbox" id="lightbox-img">
+    </div>
+    
+    <!-- ============ GLOBAL FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap;">
+                    <a href="index.html" style="color: var(--gold-primary); font-weight: 700;">Home</a> •
+                    <a href="about.html" style="color: var(--text-secondary);">About</a> •
+                    <a href="services.html" style="color: var(--text-secondary);">Services & Freelance</a> •
+                    <a href="projects.html" style="color: var(--text-secondary);">Projects</a> •
+                    <a href="software.html" style="color: var(--text-secondary);">Software</a> •
+                    <a href="experience.html" style="color: var(--text-secondary);">Experience</a> •
+                    <a href="certificates.html" style="color: var(--text-secondary);">Certificates</a> •
+                    <a href="contact.html" style="color: var(--text-secondary);">Contact</a>
+                </div>
+                <p data-en="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant" data-ar="م. مصطفى عبدالغني — رئيس قسم مشتريات MEP واستشاري هندسي">
+                    Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant
+                </p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/966502582122" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:engmostafamahoud2012@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+966502582122" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Eng. Mostafa Abdelghany. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CV Button -->
+    <a href="assets/docs/Mostafa_Abdelghany_Procurement_CV.pdf" download id="cv-float-btn" class="cv-float-btn" title="Download CV">
+        <i class="fas fa-download"></i>
+        <span data-en="CV" data-ar="السيرة">CV</span>
+    </a>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Core Scripts -->
+    <script src="scripts/projects-data.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src='scripts/project-detail.js'></script>
+</body>
+</html>
