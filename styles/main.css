@@ -611,7 +611,6 @@ ul { list-style: none; }
 }
 
 .tilt-card-item {
-  text-align: center;
   background: var(--bg-card);
   backdrop-filter: blur(16px);
   border: 1px solid var(--line);
@@ -629,7 +628,6 @@ ul { list-style: none; }
 }
 
 .tilt-icon-box {
-  margin: 0 auto 24px;
   width: 52px;
   height: 52px;
   border-radius: var(--radius-md);

@@ -8,7 +8,6 @@ def get_nav_html(active_page="home"):
         {"id": "projects", "href": "projects.html", "en": "Projects", "ar": "المشاريع"},
         {"id": "services", "href": "services.html", "en": "Services", "ar": "الخدمات"},
         
-        {"id": "about", "href": "index.html#about", "en": "About", "ar": "???? ???"},
         {"id": "experience", "href": "experience.html", "en": "Experience", "ar": "الخبرات"},
         {"id": "certificates", "href": "certificates.html", "en": "Certificates", "ar": "الشهادات"},
         {"id": "contact", "href": "contact.html", "en": "Contact", "ar": "تواصل"},
@@ -161,7 +160,7 @@ def build_index():
       </div>
       <div class="spotlight-row">
         <span class="label" data-en="Experience" data-ar="الخبرة">Experience</span>
-        <span class="spotlight-val" data-en="9+ Years (2016-2026)" data-ar="+9 سنوات (2016-2026)">9+ Years (2016-2026)</span>
+        <span class="spotlight-val" data-en="12+ Years (2016-2026)" data-ar="+12 ??? سنوات (2016-2026)">12+ Years (2016-2026)</span>
       </div>
       <div class="spotlight-row">
         <span class="label" data-en="Flagship" data-ar="المشروع الأكبر">Flagship</span>
@@ -823,7 +822,7 @@ def build_experience():
   <header class="page-intro-header">
     <div class="container">
       <span class="page-intro-tag" data-en="Career Trajectory" data-ar="التسلسل الوظيفي">Career Trajectory</span>
-      <h1 class="page-intro-title" data-en="9+ Years of Construction Leadership" data-ar="+9 سنوات من الريادة في قطاع الإنشاءات">9+ Years of Construction Leadership</h1>
+      <h1 class="page-intro-title" data-en="12+ Years of Construction Leadership" data-ar="+12 ??? سنوات من الريادة في قطاع الإنشاءات">12+ Years of Construction Leadership</h1>
       <p class="page-intro-subtitle" data-en="Progressive career progression from field site engineer to leading mega-procurement departments for tier-1 contracting groups." data-ar="مسار وظيفي تصاعدي من مهندس موقع إلى رئاسة أقسام المشتريات لكبرى مجموعات المقاولات في الشرق الأوسط.">Progressive career progression from field site engineer to leading mega-procurement departments for tier-1 contracting groups.</p>
     </div>
   </header>
