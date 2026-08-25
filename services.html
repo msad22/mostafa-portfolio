@@ -1,306 +1,227 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant | SAR 2.63B+ Mega-Projects Experience">
-    <meta name="keywords" content="MEP Procurement, Construction, Saudi Arabia, Egypt, Portfolio, Freelance Consultant, Engineering">
-    <meta name="author" content="Eng. Mostafa Abdelghany">
-    <title>Services & Freelance Consulting — Eng. Mostafa Abdelghany</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Core Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/pages.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Services & Freelance Consulting | Eng. Mostafa Abdelghany" data-ar="الخدمات واستشارات الفريلانس | م. مصطفى عبد الغني">Services & Freelance Consulting | Eng. Mostafa Abdelghany</title>
+  <meta name="description" content="Eng. Mostafa Abdelghany - MEP Procurement Section Head | Portfolio & Engineering Hub" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
-    <div id="scroll-progress"></div>
+  <div class="grain-overlay"></div>
+  <div id="scroll-progress"></div>
+  
+    <header class="navbar-floating-header">
+      <div class="navbar-inner-box">
+        <a class="nav-brand-logo" href="index.html">
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);"></span>
+          <span data-en="Eng. Mostafa" data-ar="م. مصطفى عبد الغني">Eng. Mostafa</span>
+        </a>
 
-    <!-- ============ GLOBAL NAVBAR ============ -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-text">M</span><span class="logo-dot">.</span><span class="logo-text">A</span>
-            </a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html" class="nav-link " data-en="Home" data-ar="الرئيسية">Home</a></li>
-                <li><a href="about.html" class="nav-link " data-en="About" data-ar="نبذة عني">About</a></li>
-                <li><a href="services.html" class="nav-link active" data-en="Services & Freelance" data-ar="الخدمات والفريلانس">Services & Freelance</a></li>
-                <li><a href="projects.html" class="nav-link " data-en="Projects" data-ar="المشاريع">Projects</a></li>
-                <li><a href="software.html" class="nav-link " data-en="Software Stack" data-ar="البرامج والأدوات">Software Stack</a></li>
-                <li><a href="experience.html" class="nav-link " data-en="Experience" data-ar="المسيرة المهنية">Experience</a></li>
-                <li><a href="certificates.html" class="nav-link " data-en="Certificates" data-ar="الشهادات">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link " data-en="Contact" data-ar="تواصل وتعاقد">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="lang-toggle" class="nav-btn" title="Toggle Language">
-                    <span>AR</span>
-                </button>
-                <button id="theme-toggle" class="nav-btn" title="Toggle Theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a href="contact.html" class="btn btn-sm btn-primary magnetic-btn nav-cta-btn" style="padding: 8px 16px; font-size: 0.82rem;">
-                    <i class="fas fa-briefcase"></i> <span data-en="Hire Me" data-ar="طلب استشارة">Hire Me</span>
-                </a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+        <nav class="nav-pill-menu" id="nav-menu">
+          <a class="nav-pill-link" href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+<a class="nav-pill-link" href="projects.html" data-en="Projects" data-ar="المشاريع">Projects</a>
+<a class="nav-pill-link active" href="services.html" data-en="Services" data-ar="الخدمات">Services</a>
+<a class="nav-pill-link" href="software.html" data-en="Software" data-ar="البرامج">Software</a>
+<a class="nav-pill-link" href="about.html" data-en="About" data-ar="نبذة عني">About</a>
+<a class="nav-pill-link" href="experience.html" data-en="Experience" data-ar="الخبرات">Experience</a>
+<a class="nav-pill-link" href="certificates.html" data-en="Certificates" data-ar="الشهادات">Certificates</a>
+<a class="nav-pill-link" href="contact.html" data-en="Contact" data-ar="تواصل">Contact</a>
+
+        </nav>
+
+        <div class="nav-controls-box">
+          <button class="nav-pill-btn" id="lang-toggle" title="Switch Language">
+            <span id="lang-text">AR</span>
+          </button>
+          <button class="nav-pill-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a class="nav-cta-pill" href="contact.html" data-en="Hire Me" data-ar="تعاقد معي">Hire Me</a>
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </nav>
+      </div>
+    </header>
+    
 
-    <div style="padding-top: 130px; background: var(--bg-secondary); border-bottom: 1px solid rgba(196,163,90,0.15);">
-        <div class="container" style="padding-bottom: 60px;">
-            <div class="section-title animate-on-scroll">
-                <span class="title-number">01.</span>
-                <span data-en="Services & Freelance Consulting" data-ar="الخدمات الهندسية واستشارات الفريلانس">Services & Freelance Consulting</span>
-                <span class="title-line"></span>
-            </div>
-
-            <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 800px; line-height: 1.8;" class="animate-on-scroll" data-en="Empowering main contractors, engineering consultancies, and private real estate developers with high-level MEP procurement mastery, aggressive cost reduction strategies, and bulletproof supplier contracts." data-ar="تمكين كبرى شركات المقاولات، المكاتب الاستشارية، والمطورين العقاريين من خلال إدارة احترافية لمشتريات الـ MEP، استراتيجيات خفض التكاليف المتقدمة، وصياغة عقود توريد محكمة تضمن أقصى ربحية وأعلى جودة.">
-                Empowering main contractors, engineering consultancies, and private real estate developers with high-level MEP procurement mastery, aggressive cost reduction strategies, and bulletproof supplier contracts.
-            </p>
-
-            <!-- 6 Core Services Grid -->
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card animate-on-scroll">
-                    <span class="service-badge">High Impact</span>
-                    <div class="service-icon"><i class="fas fa-calculator"></i></div>
-                    <h3 class="service-title" data-en="Value Engineering & Cost Optimization" data-ar="هندسة القيمة وتقليل التكاليف">Value Engineering & Cost Optimization</h3>
-                    <p class="service-desc" data-en="In-depth analysis of MEP design specifications and material selections to identify equivalent high-quality alternatives, driving 10% to 25% direct savings without compromising quality or compliance." data-ar="دراسة وتحليل المواصفات الفنية لشبكات الـ MEP لاقتراح بدائل معتمدة ومطابقة للمواصفات، مما يحقق وفورات مالية مباشرة تتراوح بين 10% إلى 25% دون المساس بالجودة أو كفاءة التشغيل.">
-                        In-depth analysis of MEP design specifications and material selections to identify equivalent high-quality alternatives, driving 10% to 25% direct savings without compromising quality or compliance.
-                    </p>
-                    <div class="service-deliverables">
-                        <h5 data-en="Key Deliverables" data-ar="مخرجات الخدمة">Key Deliverables</h5>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Comparative Cost Benefit Reports</li>
-                            <li><i class="fas fa-check"></i> Approved Material Alternative Submittals</li>
-                            <li><i class="fas fa-check"></i> Life-Cycle Cost & Energy Assessments</li>
-                        </ul>
-                    </div>
-                    <a href="contact.html?service=value-engineering" class="btn btn-sm btn-outline magnetic-btn" style="margin-top: auto;">
-                        <span data-en="Inquire This Service" data-ar="طلب الخدمة">Inquire This Service</span>
-                    </a>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="service-card animate-on-scroll">
-                    <span class="service-badge">Full Package</span>
-                    <div class="service-icon"><i class="fas fa-sitemap"></i></div>
-                    <h3 class="service-title" data-en="End-to-End MEP Procurement Packages" data-ar="إدارة حزم مشتريات MEP المتكاملة">End-to-End MEP Procurement Packages</h3>
-                    <p class="service-desc" data-en="Managing the complete lifecycle of MEP procurement packages from RFP preparation, technical leveling, commercial comparisons, to purchase order issuance and factory inspection coordination." data-ar="إدارة دورة المشتريات بالكامل لحزم الـ MEP بدءاً من إعداد كراسات الشروط، التقييم الفني للموردين، المقارنات المالية، وحتى إصدار أوامر الشراء واعتماد العينات.">
-                        Managing the complete lifecycle of MEP procurement packages from RFP preparation, technical leveling, commercial comparisons, to purchase order issuance and factory inspection coordination.
-                    </p>
-                    <div class="service-deliverables">
-                        <h5 data-en="Key Deliverables" data-ar="مخرجات الخدمة">Key Deliverables</h5>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Comprehensive Commercial Comparison Sheets</li>
-                            <li><i class="fas fa-check"></i> Technical Evaluation Summaries</li>
-                            <li><i class="fas fa-check"></i> Procurement Tracking Logs (PTS)</li>
-                        </ul>
-                    </div>
-                    <a href="contact.html?service=mep-procurement" class="btn btn-sm btn-outline magnetic-btn" style="margin-top: auto;">
-                        <span data-en="Inquire This Service" data-ar="طلب الخدمة">Inquire This Service</span>
-                    </a>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="service-card animate-on-scroll">
-                    <span class="service-badge">Strategic</span>
-                    <div class="service-icon"><i class="fas fa-file-contract"></i></div>
-                    <h3 class="service-title" data-en="Subcontract & FIDIC Contract Negotiations" data-ar="التفاوض على العقود وإدارة المقاولين الباطن">Subcontract & FIDIC Contract Negotiations</h3>
-                    <p class="service-desc" data-en="Drafting robust subcontract agreements, mitigating commercial risks, negotiating payment terms, warranty periods, and penalty clauses under Saudi and international FIDIC frameworks." data-ar="صياغة وتدقيق عقود مقاولي الباطن والموردين، تخفيف المخاطر القانونية والمالية، والتفاوض على شروط الدفع والضمانات البنكية وفق أنظمة FIDIC والأنظمة السعودية.">
-                        Drafting robust subcontract agreements, mitigating commercial risks, negotiating payment terms, warranty periods, and penalty clauses under Saudi and international FIDIC frameworks.
-                    </p>
-                    <div class="service-deliverables">
-                        <h5 data-en="Key Deliverables" data-ar="مخرجات الخدمة">Key Deliverables</h5>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Subcontract Agreements & Special Conditions</li>
-                            <li><i class="fas fa-check"></i> Risk Mitigation Matrix</li>
-                            <li><i class="fas fa-check"></i> Scope Gap Minimization Reports</li>
-                        </ul>
-                    </div>
-                    <a href="contact.html?service=contract-negotiation" class="btn btn-sm btn-outline magnetic-btn" style="margin-top: auto;">
-                        <span data-en="Inquire This Service" data-ar="طلب الخدمة">Inquire This Service</span>
-                    </a>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="service-card animate-on-scroll">
-                    <span class="service-badge">Precision</span>
-                    <div class="service-icon"><i class="fas fa-list-check"></i></div>
-                    <h3 class="service-title" data-en="BOQ Preparation & Quantity Take-offs" data-ar="إعداد وتدقيق جداول الكميات (BOQ)">BOQ Preparation & Quantity Take-offs</h3>
-                    <p class="service-desc" data-en="Precise mechanical and electrical quantity take-offs directly from AutoCAD and BIM models, preparing detailed Bill of Quantities (BOQs) aligned with CSI MasterFormat standards." data-ar="حصر كميات هندسي دقيق لجميع بنود الميكانيكا والكهرباء من المخططات ونماذج الـ BIM، وإعداد جداول كميات مسعرة ومعتمدة ومطابقة لمواصفات المشروع.">
-                        Precise mechanical and electrical quantity take-offs directly from AutoCAD and BIM models, preparing detailed Bill of Quantities (BOQs) aligned with CSI MasterFormat standards.
-                    </p>
-                    <div class="service-deliverables">
-                        <h5 data-en="Key Deliverables" data-ar="مخرجات الخدمة">Key Deliverables</h5>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Itemized BOQ Excel Workbooks with Formulas</li>
-                            <li><i class="fas fa-check"></i> Material Quantity Verification Audits</li>
-                            <li><i class="fas fa-check"></i> Rate Breakdown & Cost Estimating</li>
-                        </ul>
-                    </div>
-                    <a href="contact.html?service=boq-preparation" class="btn btn-sm btn-outline magnetic-btn" style="margin-top: auto;">
-                        <span data-en="Inquire This Service" data-ar="طلب الخدمة">Inquire This Service</span>
-                    </a>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="service-card animate-on-scroll">
-                    <span class="service-badge">Advisory</span>
-                    <div class="service-icon"><i class="fas fa-comments-dollar"></i></div>
-                    <h3 class="service-title" data-en="Freelance MEP Procurement Advisory" data-ar="استشارات فريلانس هندسية متخصصة">Freelance MEP Procurement Advisory</h3>
-                    <p class="service-desc" data-en="On-demand consulting for engineering consultancies, startups, or contracting firms needing expert guidance on supplier selection, price auditing, and vendor claims resolution." data-ar="تقديم استشارات هندسية وتجارية مرنة حسب الطلب للشركات والمطورين لفحص عروض الموردين، تدقيق الأسعار، وحل النزاعات التعاقدية والتأخيرات.">
-                        On-demand consulting for engineering consultancies, startups, or contracting firms needing expert guidance on supplier selection, price auditing, and vendor claims resolution.
-                    </p>
-                    <div class="service-deliverables">
-                        <h5 data-en="Key Deliverables" data-ar="مخرجات الخدمة">Key Deliverables</h5>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Vendor Prequalification Reports</li>
-                            <li><i class="fas fa-check"></i> Material Claims Audit & Claim Defense</li>
-                            <li><i class="fas fa-check"></i> Direct 1-on-1 Strategic Consulting Calls</li>
-                        </ul>
-                    </div>
-                    <a href="contact.html?service=freelance-advisory" class="btn btn-sm btn-outline magnetic-btn" style="margin-top: auto;">
-                        <span data-en="Inquire This Service" data-ar="طلب الخدمة">Inquire This Service</span>
-                    </a>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="service-card animate-on-scroll">
-                    <span class="service-badge">Global Sourcing</span>
-                    <div class="service-icon"><i class="fas fa-truck-ramp-box"></i></div>
-                    <h3 class="service-title" data-en="Supply Chain & International Sourcing" data-ar="سلاسل الإمداد والتوريد الدولي">Supply Chain & International Sourcing</h3>
-                    <p class="service-desc" data-en="Leveraging an extensive network of verified MEP manufacturers across GCC, Europe, and Asia for long-lead equipment like chillers, transformers, generators, and specialized pumps." data-ar="الاستفادة من شبكة علاقات وتوريد دولية واسعة بالمصانع المعتمدة في الخليج وأوروبا وآسيا لتوريد المعدات ذات فترات التصنيع الطويلة (Long Lead Items).">
-                        Leveraging an extensive network of verified MEP manufacturers across GCC, Europe, and Asia for long-lead equipment like chillers, transformers, generators, and specialized pumps.
-                    </p>
-                    <div class="service-deliverables">
-                        <h5 data-en="Key Deliverables" data-ar="مخرجات الخدمة">Key Deliverables</h5>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Long-Lead Items Tracking & Expediting</li>
-                            <li><i class="fas fa-check"></i> Logistics & Customs Coordination</li>
-                            <li><i class="fas fa-check"></i> Manufacturer Warranty & Compliance Seals</li>
-                        </ul>
-                    </div>
-                    <a href="contact.html?service=supply-chain" class="btn btn-sm btn-outline magnetic-btn" style="margin-top: auto;">
-                        <span data-en="Inquire This Service" data-ar="طلب الخدمة">Inquire This Service</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Engagement Models Section -->
-            <div class="engagement-models-section animate-on-scroll">
-                <div style="text-align: center; max-width: 700px; margin: 0 auto;">
-                    <h3 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 12px;" data-en="Flexible Engagement Models" data-ar="نماذج التعاقد والعمل المرنة">Flexible Engagement Models</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;" data-en="Choose the cooperation framework that fits your project timeline and organizational scope." data-ar="اختر نموذج التعاون الذي يناسب حجم وطبيعة مشروعك واحتياجات فريقك.">
-                        Choose the cooperation framework that fits your project timeline and organizational scope.
-                    </p>
-                </div>
-
-                <div class="models-grid">
-                    <div class="model-card">
-                        <h4 class="model-title" data-en="Hourly / Retainer Advisory" data-ar="استشارة بالساعة / اشتراك شهري">Hourly / Retainer Advisory</h4>
-                        <div class="model-highlight" data-en="On-Demand" data-ar="حسب الطلب">On-Demand</div>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">
-                            Perfect for quick vendor quote reviews, contract clauses auditing, and strategic procurement consultations.
-                        </p>
-                        <a href="contact.html?plan=hourly" class="btn btn-sm btn-outline magnetic-btn">Select Model</a>
-                    </div>
-
-                    <div class="model-card featured">
-                        <span style="background: var(--gold-primary); color: #0A192F; font-size: 0.75rem; font-weight: 800; padding: 3px 12px; border-radius: 10px; display: inline-block; margin-bottom: 10px;">MOST POPULAR</span>
-                        <h4 class="model-title" data-en="Project-Based Package" data-ar="تسليم حزم مشتريات بالمشروع">Project-Based Package</h4>
-                        <div class="model-highlight" data-en="Fixed Scope" data-ar="نطاق محدد">Fixed Scope</div>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">
-                            Complete ownership of specific MEP packages (e.g. Chillers, Transformers, BOQ preparation, or Subcontract).
-                        </p>
-                        <a href="contact.html?plan=project" class="btn btn-sm btn-primary magnetic-btn">Select Model</a>
-                    </div>
-
-                    <div class="model-card">
-                        <h4 class="model-title" data-en="Full Procurement Leadership" data-ar="إدارة مشتريات المشروع الكاملة">Full Procurement Leadership</h4>
-                        <div class="model-highlight" data-en="Milestone / KPI" data-ar="بناءً على الإنجاز">Milestone / KPI</div>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">
-                            Managing the entire project procurement portfolio, team coordination, and value engineering targets.
-                        </p>
-                        <a href="contact.html?plan=full" class="btn btn-sm btn-outline magnetic-btn">Select Model</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- WhatsApp Banner -->
-            <div class="whatsapp-cta-banner animate-on-scroll">
-                <div>
-                    <h3 style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 8px;">
-                        <span data-en="Ready to Elevate Your MEP Procurement?" data-ar="جاهز لتعظيم أرباح وخفض تكاليف مشروعك؟">Ready to Elevate Your MEP Procurement?</span>
-                    </h3>
-                    <p style="color: #A3E6C8; font-size: 1rem; margin: 0;" data-en="Send a message on WhatsApp for instant response and project quotation." data-ar="تواصل عبر الواتساب مباشرة لمناقشة تفاصيل مشروعك واستلام عرض السعر.">
-                        Send a message on WhatsApp for instant response and project quotation.
-                    </p>
-                </div>
-                <a href="https://wa.me/966502582122?text=Hello%20Eng.%20Mostafa,%20I%20would%20like%20to%20discuss%20a%20procurement%20consulting%20opportunity." target="_blank" class="btn-whatsapp magnetic-btn">
-                    <i class="fab fa-whatsapp" style="font-size: 1.4rem;"></i>
-                    <span data-en="Chat on WhatsApp Now" data-ar="محادثة واتساب فورية">Chat on WhatsApp Now</span>
-                </a>
-            </div>
-        </div>
+  <header class="page-intro-header">
+    <div class="container">
+      <span class="page-intro-tag" data-en="Capabilities & Consulting" data-ar="الخدمات والاستشارات الفنية">Capabilities & Consulting</span>
+      <h1 class="page-intro-title" data-en="MEP Procurement & Tender Advisory" data-ar="خدمات مشتريات MEP واستشارات المناقصات">MEP Procurement & Tender Advisory</h1>
+      <p class="page-intro-subtitle" data-en="Comprehensive procurement engineering, cost optimization, contract negotiation, and freelance advisory for contracting firms and developers." data-ar="حزم خدمات شاملة في هندسة المشتريات، دراسة التكاليف، صياغة العقود، واستشارات الفريلانس لكبرى شركات التطوير والمقاولات.">Comprehensive procurement engineering, cost optimization, contract negotiation, and freelance advisory for contracting firms and developers.</p>
     </div>
-    
-    <!-- ============ GLOBAL FOOTER ============ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap;">
-                    <a href="index.html" style="color: var(--gold-primary); font-weight: 700;">Home</a> •
-                    <a href="about.html" style="color: var(--text-secondary);">About</a> •
-                    <a href="services.html" style="color: var(--text-secondary);">Services & Freelance</a> •
-                    <a href="projects.html" style="color: var(--text-secondary);">Projects</a> •
-                    <a href="software.html" style="color: var(--text-secondary);">Software</a> •
-                    <a href="experience.html" style="color: var(--text-secondary);">Experience</a> •
-                    <a href="certificates.html" style="color: var(--text-secondary);">Certificates</a> •
-                    <a href="contact.html" style="color: var(--text-secondary);">Contact</a>
-                </div>
-                <p data-en="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant" data-ar="م. مصطفى عبدالغني — رئيس قسم مشتريات MEP واستشاري هندسي">
-                    Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant
-                </p>
-                <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/966502582122" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:engmostafamahoud2012@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+966502582122" title="Phone"><i class="fas fa-phone"></i></a>
-                </div>
-                <p class="footer-copy">&copy; 2026 Eng. Mostafa Abdelghany. All Rights Reserved.</p>
-            </div>
+  </header>
+
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="services-editorial-grid">
+        <!-- Service 1 -->
+        <div class="service-dark-card">
+          <div>
+            <div class="service-icon-box"><i class="fas fa-coins"></i></div>
+            <h3 class="service-card-title" data-en="Value Engineering & Cost Optimization" data-ar="هندسة القيمة وتحسين التكاليف">Value Engineering & Cost Optimization</h3>
+            <p class="service-card-desc" data-en="Systematic technical reviews of MEP systems to identify cost-saving alternatives without compromising specifications, performance, or consultant approvals." data-ar="مراجعة فنية شاملة لمنظومات MEP لتقديم بدائل فنية معتمدة توفر ملايين الريالات دون المساس بالجودة أو موافقة الاستشاري.">Systematic technical reviews of MEP systems to identify cost-saving alternatives without compromising specifications, performance, or consultant approvals.</p>
+          </div>
+          <div class="service-deliverables-list">
+            <span class="service-deliverable-item" data-en="Alternative vendor technical comparisons" data-ar="مقارنات فنية ومالية للبدائل">Alternative vendor technical comparisons</span>
+            <span class="service-deliverable-item" data-en="Lifecycle cost analysis" data-ar="تحليل تكلفة دورة الحياة">Lifecycle cost analysis</span>
+            <span class="service-deliverable-item" data-en="Consultant approval submittal support" data-ar="إعداد مذكرات الاعتماد للاستشاري">Consultant approval submittal support</span>
+          </div>
         </div>
+
+        <!-- Service 2 -->
+        <div class="service-dark-card">
+          <div>
+            <div class="service-icon-box"><i class="fas fa-file-signature"></i></div>
+            <h3 class="service-card-title" data-en="Subcontract Negotiation & FIDIC" data-ar="صياغة وتفاوض عقود الباطن وفيديك">Subcontract Negotiation & FIDIC</h3>
+            <p class="service-card-desc" data-en="Drafting robust subcontract agreements, back-to-back risk alignment with main contract conditions, and strategic commercial negotiations." data-ar="صياغة عقود باطن محكمة متوافقة مع شروط العقد الرئيسي والفيديك، وإدارة جلسات التفاوض المالي والفني بحرفية.">Drafting robust subcontract agreements, back-to-back risk alignment with main contract conditions, and strategic commercial negotiations.</p>
+          </div>
+          <div class="service-deliverables-list">
+            <span class="service-deliverable-item" data-en="Back-to-back risk mitigation terms" data-ar="بنود حماية وحوكمة المخاطر">Back-to-back risk mitigation terms</span>
+            <span class="service-deliverable-item" data-en="Scope gap matrix prevention" data-ar="منع ثغرات وتداخل نطاق الأعمال">Scope gap matrix prevention</span>
+            <span class="service-deliverable-item" data-en="Payment milestones & retention clauses" data-ar="صياغة الدفعات النقدية والضمانات">Payment milestones & retention clauses</span>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-dark-card">
+          <div>
+            <div class="service-icon-box"><i class="fas fa-boxes-stacked"></i></div>
+            <h3 class="service-card-title" data-en="Tender Pricing & BOQ Estimation" data-ar="تسعير العطاءات وإعداد جداول الكميات">Tender Pricing & BOQ Estimation</h3>
+            <p class="service-card-desc" data-en="Accurate quantity takeoff, RFQ management, supplier quotation evaluations, and tender package preparation for major MEP bids." data-ar="حصر كميات دقيق، إدارة طلبات عروض الأسعار RFQ، تحليل العروض، وإعداد مظاريف المناقصات التنافسية.">Accurate quantity takeoff, RFQ management, supplier quotation evaluations, and tender package preparation for major MEP bids.</p>
+          </div>
+          <div class="service-deliverables-list">
+            <span class="service-deliverable-item" data-en="Detailed MEP BOQ takeoff" data-ar="حصر تفصيلي لمخططات الـ MEP">Detailed MEP BOQ takeoff</span>
+            <span class="service-deliverable-item" data-en="Commercial bid leveling sheets" data-ar="جداول مقارنة وتفريغ الأسعار">Commercial bid leveling sheets</span>
+            <span class="service-deliverable-item" data-en="Procurement schedule aligned with P6" data-ar="جدول زمني للمشتريات متوافق مع P6">Procurement schedule aligned with P6</span>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-dark-card">
+          <div>
+            <div class="service-icon-box"><i class="fas fa-globe-americas"></i></div>
+            <h3 class="service-card-title" data-en="Global Supply Chain & Vendor Sourcing" data-ar="سلاسل الإمداد وتأهيل الموردين الدوليين">Global Supply Chain & Vendor Sourcing</h3>
+            <p class="service-card-desc" data-en="Establishing direct factory channels across Europe, Gulf, and Asia for chillers, fire pumps, transformers, and specialized MEP systems." data-ar="بناء قنوات استيراد وتوريد مباشرة مع المصانع العالمية في أوروبا والخليج وآسيا للمعدات الكبرى ومحطات التبريد.">Establishing direct factory channels across Europe, Gulf, and Asia for chillers, fire pumps, transformers, and specialized MEP systems.</p>
+          </div>
+          <div class="service-deliverables-list">
+            <span class="service-deliverable-item" data-en="Approved vendor list (AVL) auditing" data-ar="تدقيق سجل الموردين المعتمدين">Approved vendor list (AVL) auditing</span>
+            <span class="service-deliverable-item" data-en="International logistics & LC terms" data-ar="الاعتمادات المستندية والشحن الدولي">International logistics & LC terms</span>
+            <span class="service-deliverable-item" data-en="Factory acceptance testing (FAT) protocol" data-ar="بروتوكولات فحص المصنع FAT">Factory acceptance testing (FAT) protocol</span>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-dark-card">
+          <div>
+            <div class="service-icon-box"><i class="fas fa-handshake"></i></div>
+            <h3 class="service-card-title" data-en="Freelance MEP Package Management" data-ar="إدارة حزم مشتريات MEP بنظام الفريلانس">Freelance MEP Package Management</h3>
+            <p class="service-card-desc" data-en="End-to-end remote or hybrid handling of specific procurement packages (HVAC, Electrical, Plumbing, Firefighting) for fast-track projects." data-ar="إدارة متكاملة لحزم شراء محددة (تكييف، كهرباء، صحي، حريق) عن بعد أو هجين للمشاريع السريعة.">End-to-end remote or hybrid handling of specific procurement packages (HVAC, Electrical, Plumbing, Firefighting) for fast-track projects.</p>
+          </div>
+          <div class="service-deliverables-list">
+            <span class="service-deliverable-item" data-en="Fast turnaround package delivery" data-ar="تسليم سريع ومحكم للحزمة">Fast turnaround package delivery</span>
+            <span class="service-deliverable-item" data-en="Direct supplier negotiation representation" data-ar="تمثيل المالك/المقاول أمام الموردين">Direct supplier negotiation representation</span>
+            <span class="service-deliverable-item" data-en="Weekly procurement status tracking" data-ar="تقارير متابعة أسبوعية دقيقة">Weekly procurement status tracking</span>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-dark-card">
+          <div>
+            <div class="service-icon-box"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="service-card-title" data-en="ERP & Procurement System Setup" data-ar="هيكلة أنظمة المشتريات و ERP">ERP & Procurement System Setup</h3>
+            <p class="service-card-desc" data-en="Configuring Oracle ERP & SAP MM procurement workflows, standardizing RFQ templates, and establishing procurement governance." data-ar="إعداد دورات المشتريات على أوراكل وساب، توحيد نماذج عروض الأسعار، وضبط حوكمة واعتمادات الشراء.">Configuring Oracle ERP & SAP MM procurement workflows, standardizing RFQ templates, and establishing procurement governance.</p>
+          </div>
+          <div class="service-deliverables-list">
+            <span class="service-deliverable-item" data-en="Procurement approval matrix design" data-ar="مصفوفة صلاحيات واعتمادات الشراء">Procurement approval matrix design</span>
+            <span class="service-deliverable-item" data-en="ERP item catalog coding standards" data-ar="أكواد وتصنيفات الأصناف الهندسية">ERP item catalog coding standards</span>
+            <span class="service-deliverable-item" data-en="Procurement KPI dashboard setup" data-ar="لوحات مؤشرات الأداء KPIs">Procurement KPI dashboard setup</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Models -->
+      <div style="margin-top:80px;">
+        <span class="label gold-text" data-en="Engagement Options" data-ar="خيارات ونماذج التعاقد">Engagement Options</span>
+        <h2 class="section-heading-title" data-en="Flexible Consulting Models" data-ar="نماذج تعاقد مرنة تناسب مشروعك">Flexible Consulting Models</h2>
+
+        <div class="pricing-models-grid">
+          <div class="pricing-plan-card">
+            <h3 class="font-display" style="font-size:1.4rem;color:var(--ink);margin-bottom:8px;" data-en="Advisory & Review" data-ar="الاستشارة والمراجعة الفنية">Advisory & Review</h3>
+            <p style="color:var(--ink-dim);font-size:0.88rem;margin-bottom:20px;" data-en="Per-hour or per-session consultation on specific tenders, vendor claims, or procurement disputes." data-ar="جلسات استشارية بالساعة لدراسة عروض أسعار محددة أو مراجعة مطالبات الموردين.">Per-hour or per-session consultation on specific tenders, vendor claims, or procurement disputes.</p>
+            <div style="border-top:1px solid var(--line);padding-top:20px;">
+              <a class="btn-pill-outline" style="width:100%;justify-content:center;" href="https://wa.me/966502582122?text=Hello%20Eng.%20Mostafa,%20I%20am%20interested%20in%20an%20Advisory%20Session." target="_blank" data-en="Book Advisory" data-ar="حجز جلسة استشارية">Book Advisory</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan-card featured">
+            <div class="pricing-plan-tag" data-en="Most Popular" data-ar="الأكثر طلباً">Most Popular</div>
+            <h3 class="font-display" style="font-size:1.4rem;color:var(--ink);margin-bottom:8px;" data-en="Package Deliverable" data-ar="تسليم الحزمة بالمشروع">Package Deliverable</h3>
+            <p style="color:var(--ink-dim);font-size:0.88rem;margin-bottom:20px;" data-en="Complete delivery of a defined MEP package: RFQ, leveling, negotiation, and draft contract agreement." data-ar="تولي حزمة شراء محددة بالكامل من طرح الأسعار والتفاوض وحتى صياغة أمر الشراء أو العقد.">Complete delivery of a defined MEP package: RFQ, leveling, negotiation, and draft contract agreement.</p>
+            <div style="border-top:1px solid var(--line);padding-top:20px;">
+              <a class="btn-pill-primary" style="width:100%;justify-content:center;" href="https://wa.me/966502582122?text=Hello%20Eng.%20Mostafa,%20I%20have%20an%20MEP%20Package%20for%20consulting." target="_blank" data-en="Request Proposal" data-ar="طلب عرض تسعير حزمة">Request Proposal</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan-card">
+            <h3 class="font-display" style="font-size:1.4rem;color:var(--ink);margin-bottom:8px;" data-en="Retained Procurement Lead" data-ar="إدارة مشتريات شهرية">Retained Procurement Lead</h3>
+            <p style="color:var(--ink-dim);font-size:0.88rem;margin-bottom:20px;" data-en="Ongoing fractional leadership managing all procurement operations for medium-to-large contractors." data-ar="قيادة قسم المشتريات شهرياً للمقاولين مع حضور اجتماعات التفاوض الكبرى وإدارة الموردين.">Ongoing fractional leadership managing all procurement operations for medium-to-large contractors.</p>
+            <div style="border-top:1px solid var(--line);padding-top:20px;">
+              <a class="btn-pill-outline" style="width:100%;justify-content:center;" href="https://wa.me/966502582122?text=Hello%20Eng.%20Mostafa,%20I%20would%20like%20to%20discuss%20a%20Retained%20Procurement%20Role." target="_blank" data-en="Discuss Retainer" data-ar="مناقشة التعاقد الشهري">Discuss Retainer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <footer class="footer-high-end">
+      <div class="container">
+        <div class="footer-grid-top">
+          <div>
+            <h3 class="font-display" style="font-size:1.4rem;font-weight:600;color:var(--ink);margin-bottom:8px;">Eng. Mostafa Abdelghany</h3>
+            <p style="color:var(--ink-dim);font-size:0.92rem;max-width:380px;line-height:1.7;" data-en="MEP Procurement Section Head & Engineering Consultant. Translating complex engineering specifications into optimized procurement packages." data-ar="رئيس قسم مشتريات الكهروميكانيك (MEP) واستشاري هندسي. تحويل المواصفات الهندسية المعقدة إلى حزم شراء ومناقصات محسوبة بأعلى كفاءة.">MEP Procurement Section Head & Engineering Consultant. Translating complex engineering specifications into optimized procurement packages.</p>
+          </div>
+          <div>
+            <div class="footer-col-title" data-en="Reach" data-ar="تواصل مباشر">Reach</div>
+            <div class="footer-link-list">
+              <a class="footer-link-item" href="mailto:engmostafamahoud2012@gmail.com"><i class="fas fa-envelope gold-text"></i> engmostafamahoud2012@gmail.com</a>
+              <a class="footer-link-item" href="tel:+966502582122"><i class="fas fa-phone gold-text"></i> +966 502 582 122</a>
+              <a class="footer-link-item" href="https://wa.me/966502582122" target="_blank"><i class="fab fa-whatsapp gold-text"></i> WhatsApp Direct</a>
+              <a class="footer-link-item" href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank"><i class="fab fa-linkedin gold-text"></i> LinkedIn Profile</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title" data-en="Navigation" data-ar="أقسام الموقع">Navigation</div>
+            <div class="footer-link-list">
+              <a class="footer-link-item" href="projects.html" data-en="Projects Directory" data-ar="دليل المشاريع">Projects Directory</a>
+              <a class="footer-link-item" href="services.html" data-en="Freelance & Consulting" data-ar="الخدمات والفريلانس">Freelance & Consulting</a>
+              <a class="footer-link-item" href="software.html" data-en="Software Stack" data-ar="البرمجيات">Software Stack</a>
+              <a class="footer-link-item" href="certificates.html" data-en="Credentials & SCE" data-ar="الاعتمادات والشهادات">Credentials & SCE</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-bar">
+          <div>© 2026 ENG. MOSTAFA ABDELGHANY — ALL RIGHTS RESERVED</div>
+          <div>RIYADH, SAUDI ARABIA · SCE #1084929</div>
+        </div>
+      </div>
     </footer>
-
-    <!-- Floating CV Button -->
-    <a href="assets/docs/Mostafa_Abdelghany_Procurement_CV.pdf" download id="cv-float-btn" class="cv-float-btn" title="Download CV">
-        <i class="fas fa-download"></i>
-        <span data-en="CV" data-ar="السيرة">CV</span>
-    </a>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- Core Scripts -->
-    <script src="scripts/projects-data.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/animations.js"></script>
     
+  <a class="cv-float-btn" id="cv-float-btn" href="Mostafa Abdelghany - Procurement CV.pdf" target="_blank" title="Download CV">
+    <i class="fas fa-file-pdf" style="font-size:16px;"></i>
+    <span>CV</span>
+  </a>
+  <script src="scripts/projects-data.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/main.js"></script>
+  
 </body>
 </html>

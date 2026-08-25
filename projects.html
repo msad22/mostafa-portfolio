@@ -1,155 +1,127 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant | SAR 2.63B+ Mega-Projects Experience">
-    <meta name="keywords" content="MEP Procurement, Construction, Saudi Arabia, Egypt, Portfolio, Freelance Consultant, Engineering">
-    <meta name="author" content="Eng. Mostafa Abdelghany">
-    <title>Projects Directory — Eng. Mostafa Abdelghany</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Core Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/pages.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Projects Directory | Eng. Mostafa Abdelghany" data-ar="دليل المشاريع الشامل | م. مصطفى عبد الغني">Projects Directory | Eng. Mostafa Abdelghany</title>
+  <meta name="description" content="Eng. Mostafa Abdelghany - MEP Procurement Section Head | Portfolio & Engineering Hub" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
-    <div id="scroll-progress"></div>
+  <div class="grain-overlay"></div>
+  <div id="scroll-progress"></div>
+  
+    <header class="navbar-floating-header">
+      <div class="navbar-inner-box">
+        <a class="nav-brand-logo" href="index.html">
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);"></span>
+          <span data-en="Eng. Mostafa" data-ar="م. مصطفى عبد الغني">Eng. Mostafa</span>
+        </a>
 
-    <!-- ============ GLOBAL NAVBAR ============ -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-text">M</span><span class="logo-dot">.</span><span class="logo-text">A</span>
-            </a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html" class="nav-link " data-en="Home" data-ar="الرئيسية">Home</a></li>
-                <li><a href="about.html" class="nav-link " data-en="About" data-ar="نبذة عني">About</a></li>
-                <li><a href="services.html" class="nav-link " data-en="Services & Freelance" data-ar="الخدمات والفريلانس">Services & Freelance</a></li>
-                <li><a href="projects.html" class="nav-link active" data-en="Projects" data-ar="المشاريع">Projects</a></li>
-                <li><a href="software.html" class="nav-link " data-en="Software Stack" data-ar="البرامج والأدوات">Software Stack</a></li>
-                <li><a href="experience.html" class="nav-link " data-en="Experience" data-ar="المسيرة المهنية">Experience</a></li>
-                <li><a href="certificates.html" class="nav-link " data-en="Certificates" data-ar="الشهادات">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link " data-en="Contact" data-ar="تواصل وتعاقد">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="lang-toggle" class="nav-btn" title="Toggle Language">
-                    <span>AR</span>
-                </button>
-                <button id="theme-toggle" class="nav-btn" title="Toggle Theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a href="contact.html" class="btn btn-sm btn-primary magnetic-btn nav-cta-btn" style="padding: 8px 16px; font-size: 0.82rem;">
-                    <i class="fas fa-briefcase"></i> <span data-en="Hire Me" data-ar="طلب استشارة">Hire Me</span>
-                </a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+        <nav class="nav-pill-menu" id="nav-menu">
+          <a class="nav-pill-link" href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+<a class="nav-pill-link active" href="projects.html" data-en="Projects" data-ar="المشاريع">Projects</a>
+<a class="nav-pill-link" href="services.html" data-en="Services" data-ar="الخدمات">Services</a>
+<a class="nav-pill-link" href="software.html" data-en="Software" data-ar="البرامج">Software</a>
+<a class="nav-pill-link" href="about.html" data-en="About" data-ar="نبذة عني">About</a>
+<a class="nav-pill-link" href="experience.html" data-en="Experience" data-ar="الخبرات">Experience</a>
+<a class="nav-pill-link" href="certificates.html" data-en="Certificates" data-ar="الشهادات">Certificates</a>
+<a class="nav-pill-link" href="contact.html" data-en="Contact" data-ar="تواصل">Contact</a>
+
+        </nav>
+
+        <div class="nav-controls-box">
+          <button class="nav-pill-btn" id="lang-toggle" title="Switch Language">
+            <span id="lang-text">AR</span>
+          </button>
+          <button class="nav-pill-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a class="nav-cta-pill" href="contact.html" data-en="Hire Me" data-ar="تعاقد معي">Hire Me</a>
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </nav>
-
-    <div style="padding-top: 130px; background: var(--bg-secondary); border-bottom: 1px solid rgba(196,163,90,0.15);">
-        <div class="container" style="padding-bottom: 50px;">
-            <div class="section-title animate-on-scroll">
-                <span class="title-number">01.</span>
-                <span data-en="Projects Directory (14 Iconic Projects)" data-ar="دليل المشاريع الشامل (14 مشروعاً)">Projects Directory (14 Iconic Projects)</span>
-                <span class="title-line"></span>
-            </div>
-
-            <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 800px; line-height: 1.8; margin-bottom: 35px;" class="animate-on-scroll" data-en="Explore Eng. Mostafa Abdelghany's comprehensive portfolio of 14 mega infrastructure, residential smart cities, airports, 5-star hotels, and educational complexes across Saudi Arabia and Egypt." data-ar="تصفح السجل الهندسي الشامل للمهندس مصطفى عبدالغني المتضمن 14 مشروعاً استراتيجياً للبنية التحتية، المدن الذكية، المطارات الدولية، الأبراج والفنادق العالمية في السعودية ومصر.">
-                Explore Eng. Mostafa Abdelghany's comprehensive portfolio of 14 mega infrastructure, residential smart cities, airports, 5-star hotels, and educational complexes across Saudi Arabia and Egypt.
-            </p>
-
-            <!-- Search and Controls Bar -->
-            <div class="projects-header-controls animate-on-scroll">
-                <div class="project-search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="project-search-input" placeholder="Search projects by name, company, or sector...">
-                </div>
-
-                <!-- Country Tabs -->
-                <div class="filter-tabs" style="margin: 0;">
-                    <button class="filter-tab active" data-filter="all" data-en="All Projects" data-ar="كل المشاريع">All Projects</button>
-                    <button class="filter-tab" data-filter="ksa" data-en="Saudi Arabia" data-ar="السعودية">Saudi Arabia</button>
-                    <button class="filter-tab" data-filter="egypt" data-en="Egypt" data-ar="مصر">Egypt</button>
-                </div>
-            </div>
-
-            <!-- Sector Pills -->
-            <div class="sector-filter-pills animate-on-scroll" style="margin-bottom: 35px;">
-                <span class="sector-pill active" data-sector="all" data-en="All Sectors" data-ar="كافة القطاعات">All Sectors</span>
-                <span class="sector-pill" data-sector="infrastructure" data-en="Mega Infrastructure" data-ar="بنية تحتية عملاقة">Mega Infrastructure</span>
-                <span class="sector-pill" data-sector="compounds" data-en="Smart Cities & Compounds" data-ar="مدن ذكية ومجمعات">Smart Cities & Compounds</span>
-                <span class="sector-pill" data-sector="highrise" data-en="High-Rise Towers" data-ar="أبراج شاهقة">High-Rise Towers</span>
-                <span class="sector-pill" data-sector="hospitality" data-en="5-Star Hotels" data-ar="فنادق عالمية">5-Star Hotels</span>
-                <span class="sector-pill" data-sector="aviation" data-en="Aviation & Airports" data-ar="مطارات وطيران">Aviation & Airports</span>
-                <span class="sector-pill" data-sector="education" data-en="Universities & Research" data-ar="جامعات ومراكز أبحاث">Universities & Research</span>
-                <span class="sector-pill" data-sector="healthcare" data-en="Healthcare & Medical" data-ar="منشآت طبية">Healthcare & Medical</span>
-            </div>
-
-            <div style="font-size: 0.9rem; color: var(--gold-light); margin-bottom: 25px;">
-                Showing <strong id="projects-count-display" style="color: var(--gold-primary);">14</strong> projects (Click any project to view full gallery & technical scope)
-            </div>
-
-            <!-- Dynamic Projects Grid -->
-            <div class="projects-grid" id="projects-grid-container"></div>
-        </div>
-    </div>
+      </div>
+    </header>
     
-    <!-- ============ GLOBAL FOOTER ============ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap;">
-                    <a href="index.html" style="color: var(--gold-primary); font-weight: 700;">Home</a> •
-                    <a href="about.html" style="color: var(--text-secondary);">About</a> •
-                    <a href="services.html" style="color: var(--text-secondary);">Services & Freelance</a> •
-                    <a href="projects.html" style="color: var(--text-secondary);">Projects</a> •
-                    <a href="software.html" style="color: var(--text-secondary);">Software</a> •
-                    <a href="experience.html" style="color: var(--text-secondary);">Experience</a> •
-                    <a href="certificates.html" style="color: var(--text-secondary);">Certificates</a> •
-                    <a href="contact.html" style="color: var(--text-secondary);">Contact</a>
-                </div>
-                <p data-en="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant" data-ar="م. مصطفى عبدالغني — رئيس قسم مشتريات MEP واستشاري هندسي">
-                    Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant
-                </p>
-                <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/966502582122" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:engmostafamahoud2012@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+966502582122" title="Phone"><i class="fas fa-phone"></i></a>
-                </div>
-                <p class="footer-copy">&copy; 2026 Eng. Mostafa Abdelghany. All Rights Reserved.</p>
-            </div>
+
+  <header class="page-intro-header">
+    <div class="container">
+      <span class="page-intro-tag" data-en="Project Portfolio" data-ar="سجل الأعمال والمشاريع">Project Portfolio</span>
+      <h1 class="page-intro-title" data-en="Comprehensive Projects Directory" data-ar="دليل المشاريع الكبرى والخبرات الموثقة">Comprehensive Projects Directory</h1>
+      <p class="page-intro-subtitle" data-en="Explore 14 landmark infrastructure, high-rise, commercial, and governmental MEP projects across Saudi Arabia and Egypt." data-ar="استكشف 14 مشروعاً كبيراً في قطاعات البنية التحتية، الأبراج الشاهقة، المشافي، والمطارات في السعودية ومصر.">Explore 14 landmark infrastructure, high-rise, commercial, and governmental MEP projects across Saudi Arabia and Egypt.</p>
+    </div>
+  </header>
+
+  <section class="section-wrapper">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="projects-filter-bar">
+        <div class="pills-group" id="country-pills">
+          <button class="filter-pill active" data-filter="all" data-en="All Projects (14)" data-ar="جميع المشاريع (14)">All Projects (14)</button>
+          <button class="filter-pill" data-filter="ksa" data-en="Saudi Arabia 🇸🇦" data-ar="المملكة العربية السعودية 🇸🇦">Saudi Arabia 🇸🇦</button>
+          <button class="filter-pill" data-filter="egypt" data-en="Egypt 🇪🇬" data-ar="جمهورية مصر العربية 🇪🇬">Egypt 🇪🇬</button>
         </div>
+
+        <div class="search-input-box">
+          <i class="fas fa-search" style="color:var(--ink-faint);font-size:13px;"></i>
+          <input type="text" id="project-search" placeholder="Search projects, client, sector..." />
+        </div>
+      </div>
+
+      <!-- Dynamic Project Cards Grid -->
+      <div class="editorial-projects-grid" id="projects-grid-container">
+        <!-- Rendered by scripts/projects.js -->
+      </div>
+    </div>
+  </section>
+
+  
+    <footer class="footer-high-end">
+      <div class="container">
+        <div class="footer-grid-top">
+          <div>
+            <h3 class="font-display" style="font-size:1.4rem;font-weight:600;color:var(--ink);margin-bottom:8px;">Eng. Mostafa Abdelghany</h3>
+            <p style="color:var(--ink-dim);font-size:0.92rem;max-width:380px;line-height:1.7;" data-en="MEP Procurement Section Head & Engineering Consultant. Translating complex engineering specifications into optimized procurement packages." data-ar="رئيس قسم مشتريات الكهروميكانيك (MEP) واستشاري هندسي. تحويل المواصفات الهندسية المعقدة إلى حزم شراء ومناقصات محسوبة بأعلى كفاءة.">MEP Procurement Section Head & Engineering Consultant. Translating complex engineering specifications into optimized procurement packages.</p>
+          </div>
+          <div>
+            <div class="footer-col-title" data-en="Reach" data-ar="تواصل مباشر">Reach</div>
+            <div class="footer-link-list">
+              <a class="footer-link-item" href="mailto:engmostafamahoud2012@gmail.com"><i class="fas fa-envelope gold-text"></i> engmostafamahoud2012@gmail.com</a>
+              <a class="footer-link-item" href="tel:+966502582122"><i class="fas fa-phone gold-text"></i> +966 502 582 122</a>
+              <a class="footer-link-item" href="https://wa.me/966502582122" target="_blank"><i class="fab fa-whatsapp gold-text"></i> WhatsApp Direct</a>
+              <a class="footer-link-item" href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank"><i class="fab fa-linkedin gold-text"></i> LinkedIn Profile</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title" data-en="Navigation" data-ar="أقسام الموقع">Navigation</div>
+            <div class="footer-link-list">
+              <a class="footer-link-item" href="projects.html" data-en="Projects Directory" data-ar="دليل المشاريع">Projects Directory</a>
+              <a class="footer-link-item" href="services.html" data-en="Freelance & Consulting" data-ar="الخدمات والفريلانس">Freelance & Consulting</a>
+              <a class="footer-link-item" href="software.html" data-en="Software Stack" data-ar="البرمجيات">Software Stack</a>
+              <a class="footer-link-item" href="certificates.html" data-en="Credentials & SCE" data-ar="الاعتمادات والشهادات">Credentials & SCE</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-bar">
+          <div>© 2026 ENG. MOSTAFA ABDELGHANY — ALL RIGHTS RESERVED</div>
+          <div>RIYADH, SAUDI ARABIA · SCE #1084929</div>
+        </div>
+      </div>
     </footer>
-
-    <!-- Floating CV Button -->
-    <a href="assets/docs/Mostafa_Abdelghany_Procurement_CV.pdf" download id="cv-float-btn" class="cv-float-btn" title="Download CV">
-        <i class="fas fa-download"></i>
-        <span data-en="CV" data-ar="السيرة">CV</span>
-    </a>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- Core Scripts -->
-    <script src="scripts/projects-data.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/animations.js"></script>
-    <script src='scripts/projects.js'></script>
+    
+  <a class="cv-float-btn" id="cv-float-btn" href="Mostafa Abdelghany - Procurement CV.pdf" target="_blank" title="Download CV">
+    <i class="fas fa-file-pdf" style="font-size:16px;"></i>
+    <span>CV</span>
+  </a>
+  <script src="scripts/projects-data.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/projects.js"></script>
 </body>
 </html>

@@ -1,243 +1,170 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant | SAR 2.63B+ Mega-Projects Experience">
-    <meta name="keywords" content="MEP Procurement, Construction, Saudi Arabia, Egypt, Portfolio, Freelance Consultant, Engineering">
-    <meta name="author" content="Eng. Mostafa Abdelghany">
-    <title>Software Stack & Engineering Tools — Eng. Mostafa Abdelghany</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Core Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/pages.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Software & Tools Stack | Eng. Mostafa Abdelghany" data-ar="البرامج والأدوات الهندسية | م. مصطفى عبد الغني">Software & Tools Stack | Eng. Mostafa Abdelghany</title>
+  <meta name="description" content="Eng. Mostafa Abdelghany - MEP Procurement Section Head | Portfolio & Engineering Hub" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
-    <div id="scroll-progress"></div>
+  <div class="grain-overlay"></div>
+  <div id="scroll-progress"></div>
+  
+    <header class="navbar-floating-header">
+      <div class="navbar-inner-box">
+        <a class="nav-brand-logo" href="index.html">
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);"></span>
+          <span data-en="Eng. Mostafa" data-ar="م. مصطفى عبد الغني">Eng. Mostafa</span>
+        </a>
 
-    <!-- ============ GLOBAL NAVBAR ============ -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-text">M</span><span class="logo-dot">.</span><span class="logo-text">A</span>
-            </a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html" class="nav-link " data-en="Home" data-ar="الرئيسية">Home</a></li>
-                <li><a href="about.html" class="nav-link " data-en="About" data-ar="نبذة عني">About</a></li>
-                <li><a href="services.html" class="nav-link " data-en="Services & Freelance" data-ar="الخدمات والفريلانس">Services & Freelance</a></li>
-                <li><a href="projects.html" class="nav-link " data-en="Projects" data-ar="المشاريع">Projects</a></li>
-                <li><a href="software.html" class="nav-link active" data-en="Software Stack" data-ar="البرامج والأدوات">Software Stack</a></li>
-                <li><a href="experience.html" class="nav-link " data-en="Experience" data-ar="المسيرة المهنية">Experience</a></li>
-                <li><a href="certificates.html" class="nav-link " data-en="Certificates" data-ar="الشهادات">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link " data-en="Contact" data-ar="تواصل وتعاقد">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="lang-toggle" class="nav-btn" title="Toggle Language">
-                    <span>AR</span>
-                </button>
-                <button id="theme-toggle" class="nav-btn" title="Toggle Theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a href="contact.html" class="btn btn-sm btn-primary magnetic-btn nav-cta-btn" style="padding: 8px 16px; font-size: 0.82rem;">
-                    <i class="fas fa-briefcase"></i> <span data-en="Hire Me" data-ar="طلب استشارة">Hire Me</span>
-                </a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+        <nav class="nav-pill-menu" id="nav-menu">
+          <a class="nav-pill-link" href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+<a class="nav-pill-link" href="projects.html" data-en="Projects" data-ar="المشاريع">Projects</a>
+<a class="nav-pill-link" href="services.html" data-en="Services" data-ar="الخدمات">Services</a>
+<a class="nav-pill-link active" href="software.html" data-en="Software" data-ar="البرامج">Software</a>
+<a class="nav-pill-link" href="about.html" data-en="About" data-ar="نبذة عني">About</a>
+<a class="nav-pill-link" href="experience.html" data-en="Experience" data-ar="الخبرات">Experience</a>
+<a class="nav-pill-link" href="certificates.html" data-en="Certificates" data-ar="الشهادات">Certificates</a>
+<a class="nav-pill-link" href="contact.html" data-en="Contact" data-ar="تواصل">Contact</a>
+
+        </nav>
+
+        <div class="nav-controls-box">
+          <button class="nav-pill-btn" id="lang-toggle" title="Switch Language">
+            <span id="lang-text">AR</span>
+          </button>
+          <button class="nav-pill-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a class="nav-cta-pill" href="contact.html" data-en="Hire Me" data-ar="تعاقد معي">Hire Me</a>
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </nav>
+      </div>
+    </header>
+    
 
-    <div style="padding-top: 130px; background: var(--bg-secondary); border-bottom: 1px solid rgba(196,163,90,0.15);">
-        <div class="container" style="padding-bottom: 60px;">
-            <div class="section-title animate-on-scroll">
-                <span class="title-number">01.</span>
-                <span data-en="Software & Engineering Tools" data-ar="البرامج والأدوات الهندسية">Software & Engineering Tools</span>
-                <span class="title-line"></span>
-            </div>
-
-            <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 800px; line-height: 1.8;" class="animate-on-scroll" data-en="Combining advanced engineering modeling software with enterprise ERP platforms and financial tools to orchestrate multi-million dollar procurement schedules with pinpoint accuracy." data-ar="الدمج بين البرمجيات الهندسية المتقدمة وأنظمة إدارة الموارد المؤسسية (ERP) ونماذج التكاليف المالية لإدارة جداول التوريد المليارية بأعلى درجات الدقة.">
-                Combining advanced engineering modeling software with enterprise ERP platforms and financial tools to orchestrate multi-million dollar procurement schedules with pinpoint accuracy.
-            </p>
-
-            <div class="software-grid">
-                <!-- Tool 1: Primavera P6 -->
-                <div class="software-card animate-on-scroll">
-                    <div class="software-header">
-                        <div class="software-icon-wrapper"><i class="fas fa-calendar-check"></i></div>
-                        <div>
-                            <h3 class="software-title">Primavera P6 Professional</h3>
-                            <span class="software-category">Project Planning & Procurement Tracking</span>
-                        </div>
-                    </div>
-                    <p class="service-desc" data-en="Tracking long-lead MEP equipment schedules, critical path milestones, vendor delivery variance, and material submittal integration." data-ar="إدارة وتتبع جداول توريد المعدات الحساسة، المسار الحرج (Critical Path)، وانحرافات مواعيد التوريد وربطها بالجدول الزمني العام للمشروع.">
-                        Tracking long-lead MEP equipment schedules, critical path milestones, vendor delivery variance, and material submittal integration.
-                    </p>
-                    <div class="software-level">
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gold-primary); font-weight: 700;">
-                            <span>Mastery Level</span><span>92%</span>
-                        </div>
-                        <div class="level-bar"><div class="level-fill" style="width: 92%;"></div></div>
-                    </div>
-                </div>
-
-                <!-- Tool 2: AutoCAD -->
-                <div class="software-card animate-on-scroll">
-                    <div class="software-header">
-                        <div class="software-icon-wrapper"><i class="fas fa-drafting-compass"></i></div>
-                        <div>
-                            <h3 class="software-title">AutoCAD MEP</h3>
-                            <span class="software-category">Shop Drawings & As-Built Verification</span>
-                        </div>
-                    </div>
-                    <p class="service-desc" data-en="Reviewing mechanical & electrical shop drawings, verifying routing coordination, quantity take-offs, and resolving site clashes." data-ar="مراجعة وتدقيق الرسومات التنفيذية لشبكات الميكانيكا والكهرباء، حصر الكميات الهندسي، والتأكد من مطابقة المخططات للمواصفات المعمارية.">
-                        Reviewing mechanical & electrical shop drawings, verifying routing coordination, quantity take-offs, and resolving site clashes.
-                    </p>
-                    <div class="software-level">
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gold-primary); font-weight: 700;">
-                            <span>Mastery Level</span><span>95%</span>
-                        </div>
-                        <div class="level-bar"><div class="level-fill" style="width: 95%;"></div></div>
-                    </div>
-                </div>
-
-                <!-- Tool 3: BIM & Revit -->
-                <div class="software-card animate-on-scroll">
-                    <div class="software-header">
-                        <div class="software-icon-wrapper"><i class="fas fa-cubes"></i></div>
-                        <div>
-                            <h3 class="software-title">Autodesk Revit & BIM</h3>
-                            <span class="software-category">3D Coordination & Quantity Extraction</span>
-                        </div>
-                    </div>
-                    <p class="service-desc" data-en="Extracting exact bill of quantities from 3D BIM models, verifying spatial clearance for large MEP plant rooms, and model clash detection." data-ar="استخراج جداول الكميات الدقيقة من نماذج الـ BIM ثلاثية الأبعاد، وتدقيق مساحات غرف المضخات والمحولات والمحطات المركزية.">
-                        Extracting exact bill of quantities from 3D BIM models, verifying spatial clearance for large MEP plant rooms, and model clash detection.
-                    </p>
-                    <div class="software-level">
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gold-primary); font-weight: 700;">
-                            <span>Mastery Level</span><span>88%</span>
-                        </div>
-                        <div class="level-bar"><div class="level-fill" style="width: 88%;"></div></div>
-                    </div>
-                </div>
-
-                <!-- Tool 4: Oracle ERP -->
-                <div class="software-card animate-on-scroll">
-                    <div class="software-header">
-                        <div class="software-icon-wrapper"><i class="fas fa-database"></i></div>
-                        <div>
-                            <h3 class="software-title">Oracle ERP / Fusion</h3>
-                            <span class="software-category">Enterprise Procurement Management</span>
-                        </div>
-                    </div>
-                    <p class="service-desc" data-en="Issuing purchase orders (POs), managing RFQ workflows, supplier master database, budget control, and three-way invoice matching." data-ar="إصدار أوامر الشراء الرسمية، إدارة طلبات عروض الأسعار RFQ، الرقابة على ميزانية المشروعات، ومطابقة الفواتير المالية مع التوريدات الفعلية.">
-                        Issuing purchase orders (POs), managing RFQ workflows, supplier master database, budget control, and three-way invoice matching.
-                    </p>
-                    <div class="software-level">
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gold-primary); font-weight: 700;">
-                            <span>Mastery Level</span><span>94%</span>
-                        </div>
-                        <div class="level-bar"><div class="level-fill" style="width: 94%;"></div></div>
-                    </div>
-                </div>
-
-                <!-- Tool 5: SAP ERP -->
-                <div class="software-card animate-on-scroll">
-                    <div class="software-header">
-                        <div class="software-icon-wrapper"><i class="fas fa-network-wired"></i></div>
-                        <div>
-                            <h3 class="software-title">SAP Materials Management (MM)</h3>
-                            <span class="software-category">Supply Chain & Inventory Controls</span>
-                        </div>
-                    </div>
-                    <p class="service-desc" data-en="Managing material master data, purchase requisitions, good receipts (GRN), and site warehouse inventory controls." data-ar="إدارة حركة المواد والمخزون، أذونات الاستلام الفني (GRN)، وتتبع التوريدات الموقعية عبر وحدات SAP MM.">
-                        Managing material master data, purchase requisitions, good receipts (GRN), and site warehouse inventory controls.
-                    </p>
-                    <div class="software-level">
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gold-primary); font-weight: 700;">
-                            <span>Mastery Level</span><span>90%</span>
-                        </div>
-                        <div class="level-bar"><div class="level-fill" style="width: 90%;"></div></div>
-                    </div>
-                </div>
-
-                <!-- Tool 6: Advanced Excel Financial Models -->
-                <div class="software-card animate-on-scroll">
-                    <div class="software-header">
-                        <div class="software-icon-wrapper"><i class="fas fa-file-excel"></i></div>
-                        <div>
-                            <h3 class="software-title">Advanced Excel & Cost Modeling</h3>
-                            <span class="software-category">Commercial Comparison & Cash Flow</span>
-                        </div>
-                    </div>
-                    <p class="service-desc" data-en="Building complex multi-vendor commercial evaluation sheets, automated currency conversion, price indexing, and cash outflow forecasting." data-ar="بناء جداول مقارنات مالية متقدمة متعددة الموردين مع معادلات التحليل المالي وحساب التدفقات النقدية المتوقعة وفروق الأسعار.">
-                        Building complex multi-vendor commercial evaluation sheets, automated currency conversion, price indexing, and cash outflow forecasting.
-                    </p>
-                    <div class="software-level">
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gold-primary); font-weight: 700;">
-                            <span>Mastery Level</span><span>98%</span>
-                        </div>
-                        <div class="level-bar"><div class="level-fill" style="width: 98%;"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <header class="page-intro-header">
+    <div class="container">
+      <span class="page-intro-tag" data-en="Technical Competencies" data-ar="الكفاءات البرمجية والهندسية">Technical Competencies</span>
+      <h1 class="page-intro-title" data-en="Engineering & Enterprise Software Stack" data-ar="البرمجيات الهندسية والأنظمة المؤسسية">Engineering & Enterprise Software Stack</h1>
+      <p class="page-intro-subtitle" data-en="Advanced mastery of construction scheduling, BIM coordination, ERP enterprise resource planning, and financial modeling tools." data-ar="إتقان متقدم لبرمجيات الجدولة الزمنية، التنسيق الهندسي BIM، أنظمة ERP العالمية، ونماذج التحليل المالي.">Advanced mastery of construction scheduling, BIM coordination, ERP enterprise resource planning, and financial modeling tools.</p>
     </div>
-    
-    <!-- ============ GLOBAL FOOTER ============ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap;">
-                    <a href="index.html" style="color: var(--gold-primary); font-weight: 700;">Home</a> •
-                    <a href="about.html" style="color: var(--text-secondary);">About</a> •
-                    <a href="services.html" style="color: var(--text-secondary);">Services & Freelance</a> •
-                    <a href="projects.html" style="color: var(--text-secondary);">Projects</a> •
-                    <a href="software.html" style="color: var(--text-secondary);">Software</a> •
-                    <a href="experience.html" style="color: var(--text-secondary);">Experience</a> •
-                    <a href="certificates.html" style="color: var(--text-secondary);">Certificates</a> •
-                    <a href="contact.html" style="color: var(--text-secondary);">Contact</a>
-                </div>
-                <p data-en="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant" data-ar="م. مصطفى عبدالغني — رئيس قسم مشتريات MEP واستشاري هندسي">
-                    Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant
-                </p>
-                <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/966502582122" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:engmostafamahoud2012@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+966502582122" title="Phone"><i class="fas fa-phone"></i></a>
-                </div>
-                <p class="footer-copy">&copy; 2026 Eng. Mostafa Abdelghany. All Rights Reserved.</p>
-            </div>
+  </header>
+
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="software-dark-grid">
+        <!-- Tool 1: Primavera P6 -->
+        <div class="software-tool-card">
+          <div class="software-card-top">
+            <h3 class="software-tool-name">Primavera P6</h3>
+            <span class="software-tool-score">95% Mastery</span>
+          </div>
+          <div class="software-gauge-bar"><div class="software-gauge-fill" style="width:95%;"></div></div>
+          <p style="color:var(--ink-dim);font-size:0.9rem;line-height:1.6;" data-en="Procurement scheduling, critical path analysis, lead time tracking for long-lead MEP equipment, and baseline integration." data-ar="جدولة المشتريات، ربط مسار التوريد بالمسار الحرج للمشروع، ومتابعة مدة تصنيع وتوريد المعدات الرئيسية.">Procurement scheduling, critical path analysis, lead time tracking for long-lead MEP equipment, and baseline integration.</p>
         </div>
+
+        <!-- Tool 2: AutoCAD MEP -->
+        <div class="software-tool-card">
+          <div class="software-card-top">
+            <h3 class="software-tool-name">AutoCAD MEP</h3>
+            <span class="software-tool-score">95% Mastery</span>
+          </div>
+          <div class="software-gauge-bar"><div class="software-gauge-fill" style="width:95%;"></div></div>
+          <p style="color:var(--ink-dim);font-size:0.9rem;line-height:1.6;" data-en="Shop drawing audits, quantity takeoff, ductwork/piping routing reviews, and as-built verification for submittals." data-ar="مراجعة الرسومات التنفيذية، حصر الكميات الهندسي، تدقيق مسارات الدكت والمواسير، ومطابقة المخططات المحدثة.">Shop drawing audits, quantity takeoff, ductwork/piping routing reviews, and as-built verification for submittals.</p>
+        </div>
+
+        <!-- Tool 3: Revit & BIM -->
+        <div class="software-tool-card">
+          <div class="software-card-top">
+            <h3 class="software-tool-name">Revit & BIM Coordination</h3>
+            <span class="software-tool-score">88% Mastery</span>
+          </div>
+          <div class="software-gauge-bar"><div class="software-gauge-fill" style="width:88%;"></div></div>
+          <p style="color:var(--ink-dim);font-size:0.9rem;line-height:1.6;" data-en="Navigating 3D multidisciplinary models, clash detection resolution with structural/architectural, and automated material schedules." data-ar="التنقل وفحص النماذج ثلاثية الأبعاد، حل التعارضات مع الإنشائي والمعماري، واستخراج جداول المواد بدقة.">Navigating 3D multidisciplinary models, clash detection resolution with structural/architectural, and automated material schedules.</p>
+        </div>
+
+        <!-- Tool 4: Oracle ERP -->
+        <div class="software-tool-card">
+          <div class="software-card-top">
+            <h3 class="software-tool-name">Oracle ERP</h3>
+            <span class="software-tool-score">92% Mastery</span>
+          </div>
+          <div class="software-gauge-bar"><div class="software-gauge-fill" style="width:92%;"></div></div>
+          <p style="color:var(--ink-dim);font-size:0.9rem;line-height:1.6;" data-en="Purchase requisitions (PR), PO creation, budget allocation, vendor master file management, and inventory matching." data-ar="إدارة طلبات الشراء PR، إصدار أوامر الشراء PO، مراقبة الميزانيات، وإدارة سجل الموردين المعتمدين.">Purchase requisitions (PR), PO creation, budget allocation, vendor master file management, and inventory matching.</p>
+        </div>
+
+        <!-- Tool 5: SAP MM -->
+        <div class="software-tool-card">
+          <div class="software-card-top">
+            <h3 class="software-tool-name">SAP MM</h3>
+            <span class="software-tool-score">85% Mastery</span>
+          </div>
+          <div class="software-gauge-bar"><div class="software-gauge-fill" style="width:85%;"></div></div>
+          <p style="color:var(--ink-dim);font-size:0.9rem;line-height:1.6;" data-en="Materials management, goods receipt verification (GRN), invoice validation, and supply chain transaction tracking." data-ar="إدارة المواد والمخزون، إشعارات الاستلام بالموقع GRN، مطابقة الفواتير، ومتابعة العمليات اللوجستية.">Materials management, goods receipt verification (GRN), invoice validation, and supply chain transaction tracking.</p>
+        </div>
+
+        <!-- Tool 6: Advanced Financial Excel -->
+        <div class="software-tool-card">
+          <div class="software-card-top">
+            <h3 class="software-tool-name">Advanced Excel & BOQs</h3>
+            <span class="software-tool-score">98% Mastery</span>
+          </div>
+          <div class="software-gauge-bar"><div class="software-gauge-fill" style="width:98%;"></div></div>
+          <p style="color:var(--ink-dim);font-size:0.9rem;line-height:1.6;" data-en="Complex procurement leveling matrices, automated cost tracking dashboards, cash-flow forecasting, and macro models." data-ar="بناء نماذج تفريغ العطاءات المعقدة، لوحات متابعة التكاليف، التنبؤ بالتدفقات النقدية، ومعادلات التحليل المالي.">Complex procurement leveling matrices, automated cost tracking dashboards, cash-flow forecasting, and macro models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <footer class="footer-high-end">
+      <div class="container">
+        <div class="footer-grid-top">
+          <div>
+            <h3 class="font-display" style="font-size:1.4rem;font-weight:600;color:var(--ink);margin-bottom:8px;">Eng. Mostafa Abdelghany</h3>
+            <p style="color:var(--ink-dim);font-size:0.92rem;max-width:380px;line-height:1.7;" data-en="MEP Procurement Section Head & Engineering Consultant. Translating complex engineering specifications into optimized procurement packages." data-ar="رئيس قسم مشتريات الكهروميكانيك (MEP) واستشاري هندسي. تحويل المواصفات الهندسية المعقدة إلى حزم شراء ومناقصات محسوبة بأعلى كفاءة.">MEP Procurement Section Head & Engineering Consultant. Translating complex engineering specifications into optimized procurement packages.</p>
+          </div>
+          <div>
+            <div class="footer-col-title" data-en="Reach" data-ar="تواصل مباشر">Reach</div>
+            <div class="footer-link-list">
+              <a class="footer-link-item" href="mailto:engmostafamahoud2012@gmail.com"><i class="fas fa-envelope gold-text"></i> engmostafamahoud2012@gmail.com</a>
+              <a class="footer-link-item" href="tel:+966502582122"><i class="fas fa-phone gold-text"></i> +966 502 582 122</a>
+              <a class="footer-link-item" href="https://wa.me/966502582122" target="_blank"><i class="fab fa-whatsapp gold-text"></i> WhatsApp Direct</a>
+              <a class="footer-link-item" href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank"><i class="fab fa-linkedin gold-text"></i> LinkedIn Profile</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title" data-en="Navigation" data-ar="أقسام الموقع">Navigation</div>
+            <div class="footer-link-list">
+              <a class="footer-link-item" href="projects.html" data-en="Projects Directory" data-ar="دليل المشاريع">Projects Directory</a>
+              <a class="footer-link-item" href="services.html" data-en="Freelance & Consulting" data-ar="الخدمات والفريلانس">Freelance & Consulting</a>
+              <a class="footer-link-item" href="software.html" data-en="Software Stack" data-ar="البرمجيات">Software Stack</a>
+              <a class="footer-link-item" href="certificates.html" data-en="Credentials & SCE" data-ar="الاعتمادات والشهادات">Credentials & SCE</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-bar">
+          <div>© 2026 ENG. MOSTAFA ABDELGHANY — ALL RIGHTS RESERVED</div>
+          <div>RIYADH, SAUDI ARABIA · SCE #1084929</div>
+        </div>
+      </div>
     </footer>
-
-    <!-- Floating CV Button -->
-    <a href="assets/docs/Mostafa_Abdelghany_Procurement_CV.pdf" download id="cv-float-btn" class="cv-float-btn" title="Download CV">
-        <i class="fas fa-download"></i>
-        <span data-en="CV" data-ar="السيرة">CV</span>
-    </a>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- Core Scripts -->
-    <script src="scripts/projects-data.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/animations.js"></script>
     
+  <a class="cv-float-btn" id="cv-float-btn" href="Mostafa Abdelghany - Procurement CV.pdf" target="_blank" title="Download CV">
+    <i class="fas fa-file-pdf" style="font-size:16px;"></i>
+    <span>CV</span>
+  </a>
+  <script src="scripts/projects-data.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/main.js"></script>
+  
 </body>
 </html>

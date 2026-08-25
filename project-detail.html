@@ -1,204 +1,179 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant | SAR 2.63B+ Mega-Projects Experience">
-    <meta name="keywords" content="MEP Procurement, Construction, Saudi Arabia, Egypt, Portfolio, Freelance Consultant, Engineering">
-    <meta name="author" content="Eng. Mostafa Abdelghany">
-    <title>Project Showcase & Gallery — Eng. Mostafa Abdelghany</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Core Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/pages.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Project Showcase | Eng. Mostafa Abdelghany" data-ar="تفاصيل المشروع | م. مصطفى عبد الغني">Project Showcase | Eng. Mostafa Abdelghany</title>
+  <meta name="description" content="Eng. Mostafa Abdelghany - MEP Procurement Section Head | Portfolio & Engineering Hub" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 <body>
-    <div id="scroll-progress"></div>
+  <div class="grain-overlay"></div>
+  <div id="scroll-progress"></div>
+  
+    <header class="navbar-floating-header">
+      <div class="navbar-inner-box">
+        <a class="nav-brand-logo" href="index.html">
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);"></span>
+          <span data-en="Eng. Mostafa" data-ar="م. مصطفى عبد الغني">Eng. Mostafa</span>
+        </a>
 
-    <!-- ============ GLOBAL NAVBAR ============ -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-text">M</span><span class="logo-dot">.</span><span class="logo-text">A</span>
-            </a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html" class="nav-link " data-en="Home" data-ar="الرئيسية">Home</a></li>
-                <li><a href="about.html" class="nav-link " data-en="About" data-ar="نبذة عني">About</a></li>
-                <li><a href="services.html" class="nav-link " data-en="Services & Freelance" data-ar="الخدمات والفريلانس">Services & Freelance</a></li>
-                <li><a href="projects.html" class="nav-link active" data-en="Projects" data-ar="المشاريع">Projects</a></li>
-                <li><a href="software.html" class="nav-link " data-en="Software Stack" data-ar="البرامج والأدوات">Software Stack</a></li>
-                <li><a href="experience.html" class="nav-link " data-en="Experience" data-ar="المسيرة المهنية">Experience</a></li>
-                <li><a href="certificates.html" class="nav-link " data-en="Certificates" data-ar="الشهادات">Certificates</a></li>
-                <li><a href="contact.html" class="nav-link " data-en="Contact" data-ar="تواصل وتعاقد">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="lang-toggle" class="nav-btn" title="Toggle Language">
-                    <span>AR</span>
-                </button>
-                <button id="theme-toggle" class="nav-btn" title="Toggle Theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a href="contact.html" class="btn btn-sm btn-primary magnetic-btn nav-cta-btn" style="padding: 8px 16px; font-size: 0.82rem;">
-                    <i class="fas fa-briefcase"></i> <span data-en="Hire Me" data-ar="طلب استشارة">Hire Me</span>
-                </a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+        <nav class="nav-pill-menu" id="nav-menu">
+          <a class="nav-pill-link" href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+<a class="nav-pill-link active" href="projects.html" data-en="Projects" data-ar="المشاريع">Projects</a>
+<a class="nav-pill-link" href="services.html" data-en="Services" data-ar="الخدمات">Services</a>
+<a class="nav-pill-link" href="software.html" data-en="Software" data-ar="البرامج">Software</a>
+<a class="nav-pill-link" href="about.html" data-en="About" data-ar="نبذة عني">About</a>
+<a class="nav-pill-link" href="experience.html" data-en="Experience" data-ar="الخبرات">Experience</a>
+<a class="nav-pill-link" href="certificates.html" data-en="Certificates" data-ar="الشهادات">Certificates</a>
+<a class="nav-pill-link" href="contact.html" data-en="Contact" data-ar="تواصل">Contact</a>
+
+        </nav>
+
+        <div class="nav-controls-box">
+          <button class="nav-pill-btn" id="lang-toggle" title="Switch Language">
+            <span id="lang-text">AR</span>
+          </button>
+          <button class="nav-pill-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a class="nav-cta-pill" href="contact.html" data-en="Hire Me" data-ar="تعاقد معي">Hire Me</a>
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </nav>
-
-    <div class="project-detail-hero">
-        <div class="container">
-            <a href="projects.html" class="back-to-projects-btn magnetic-btn">
-                <i class="fas fa-arrow-left"></i>
-                <span data-en="Back to All Projects" data-ar="الرجوع إلى دليل المشاريع">Back to All Projects</span>
-            </a>
-
-            <div style="font-size: 0.85rem; color: var(--accent-teal); font-weight: 700; text-transform: uppercase; margin-bottom: 8px;" id="project-detail-sector">
-                Sector
-            </div>
-
-            <h1 class="project-detail-title" id="project-detail-title">Project Title</h1>
-
-            <div class="project-detail-meta-bar">
-                <span><i class="fas fa-building"></i> <span id="project-detail-company">Company</span></span>
-                <span><i class="fas fa-user-tie"></i> <span id="project-detail-role">Role</span></span>
-                <span><i class="fas fa-calendar"></i> <span id="project-detail-period">Period</span></span>
-                <span><i class="fas fa-map-marker-alt"></i> <span id="project-detail-location">Location</span></span>
-            </div>
-
-            <!-- High-Res Interactive Gallery Component -->
-            <div class="project-gallery-wrapper animate-on-scroll">
-                <div class="main-image-display" id="gallery-main-container">
-                    <img src="" alt="Project Photo" id="gallery-main-img">
-                    <button class="gallery-fullscreen-btn" id="gallery-fullscreen-btn" title="View Fullscreen">
-                        <i class="fas fa-expand"></i>
-                    </button>
-                    <button class="gallery-nav-btn gallery-prev" id="gallery-prev-btn" aria-label="Previous Photo">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="gallery-nav-btn gallery-next" id="gallery-next-btn" aria-label="Next Photo">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-
-                <!-- Thumbnails Strip -->
-                <div class="gallery-thumbnails-strip" id="gallery-thumbs-container"></div>
-            </div>
-
-            <!-- Project Details & Sidebar -->
-            <div class="project-sheet-grid">
-                <!-- Main Body -->
-                <div class="project-details-body animate-on-scroll">
-                    <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--gold-primary); margin-bottom: 16px;">
-                        <span data-en="Project Overview & Engineering Leadership" data-ar="نظرة عامة والقيادة الهندسية للمشروع">Project Overview & Engineering Leadership</span>
-                    </h3>
-                    <p id="project-detail-desc" style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 35px;"></p>
-
-                    <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--gold-primary); margin-bottom: 20px;">
-                        <span data-en="MEP Procurement Scope of Work" data-ar="نطاق أعمال مشتريات الـ MEP">MEP Procurement Scope of Work</span>
-                    </h3>
-                    <div id="project-mep-scope-container"></div>
-                </div>
-
-                <!-- Sidebar Metadata -->
-                <div class="project-sidebar-meta animate-on-scroll">
-                    <h4 style="font-size: 1.2rem; font-weight: 700; color: var(--gold-primary); margin-bottom: 20px; border-bottom: 1px solid rgba(196,163,90,0.2); padding-bottom: 10px;">
-                        <span data-en="Project Data Sheet" data-ar="بطاقة بيانات المشروع">Project Data Sheet</span>
-                    </h4>
-
-                    <div class="sidebar-meta-item">
-                        <span class="sidebar-meta-label"><i class="fas fa-coins"></i> <span data-en="Project Value" data-ar="القيمة المالية">Project Value</span></span>
-                        <div class="sidebar-meta-val gold-text" id="project-detail-value">-</div>
-                    </div>
-
-                    <div class="sidebar-meta-item">
-                        <span class="sidebar-meta-label"><i class="fas fa-handshake"></i> <span data-en="Client / Owner" data-ar="المالك / العميل">Client / Owner</span></span>
-                        <div class="sidebar-meta-val" id="project-detail-client">-</div>
-                    </div>
-
-                    <div class="sidebar-meta-item">
-                        <span class="sidebar-meta-label"><i class="fas fa-users"></i> <span data-en="Key Stakeholders" data-ar="الشركاء والاستشاريون">Key Stakeholders</span></span>
-                        <div id="project-stakeholders-container" style="margin-top: 8px;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Next/Prev Pagination -->
-            <div class="project-pagination-bar animate-on-scroll">
-                <a href="#" id="prev-project-btn" class="nav-proj-btn magnetic-btn">
-                    <i class="fas fa-arrow-left"></i>
-                    <span class="proj-btn-label">Previous Project</span>
-                </a>
-                <a href="#" id="next-project-btn" class="nav-proj-btn magnetic-btn">
-                    <span class="proj-btn-label">Next Project</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Lightbox Modal -->
-    <div class="lightbox-modal" id="lightbox-modal">
-        <button class="lightbox-close-btn" id="lightbox-close-btn">&times;</button>
-        <img src="" alt="Fullscreen Lightbox" id="lightbox-img">
-    </div>
+      </div>
+    </header>
     
-    <!-- ============ GLOBAL FOOTER ============ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap;">
-                    <a href="index.html" style="color: var(--gold-primary); font-weight: 700;">Home</a> •
-                    <a href="about.html" style="color: var(--text-secondary);">About</a> •
-                    <a href="services.html" style="color: var(--text-secondary);">Services & Freelance</a> •
-                    <a href="projects.html" style="color: var(--text-secondary);">Projects</a> •
-                    <a href="software.html" style="color: var(--text-secondary);">Software</a> •
-                    <a href="experience.html" style="color: var(--text-secondary);">Experience</a> •
-                    <a href="certificates.html" style="color: var(--text-secondary);">Certificates</a> •
-                    <a href="contact.html" style="color: var(--text-secondary);">Contact</a>
-                </div>
-                <p data-en="Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant" data-ar="م. مصطفى عبدالغني — رئيس قسم مشتريات MEP واستشاري هندسي">
-                    Eng. Mostafa Abdelghany — MEP Procurement Section Head & Engineering Consultant
-                </p>
-                <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/966502582122" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:engmostafamahoud2012@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+966502582122" title="Phone"><i class="fas fa-phone"></i></a>
-                </div>
-                <p class="footer-copy">&copy; 2026 Eng. Mostafa Abdelghany. All Rights Reserved.</p>
-            </div>
+
+  <header class="page-intro-header">
+    <div class="container">
+      <a href="projects.html" class="page-intro-tag" style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;">
+        <i class="fas fa-arrow-left"></i> <span data-en="Back to Projects Directory" data-ar="العودة لدليل المشاريع">Back to Projects Directory</span>
+      </a>
+      <h1 class="page-intro-title" id="proj-detail-title">Project Title</h1>
+      <p class="page-intro-subtitle" id="proj-detail-location">Location & Client Info</p>
+    </div>
+  </header>
+
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="project-sheet-layout">
+        <!-- Gallery Viewer (Left) -->
+        <div class="gallery-viewer-box">
+          <div class="main-image-viewport" id="main-image-box">
+            <img id="main-viewer-img" src="" alt="Project View" />
+            <button class="gallery-nav-arrow prev" id="gallery-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+            <button class="gallery-nav-arrow next" id="gallery-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="thumbnails-strip" id="thumbnails-track">
+            <!-- Rendered dynamically -->
+          </div>
+          <p style="font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);margin-top:10px;text-align:center;" data-en="Click on image for Fullscreen Lightbox view" data-ar="انقر على الصورة للتكبير بشاشة كاملة (Lightbox)">Click on image for Fullscreen Lightbox view</p>
         </div>
+
+        <!-- Metadata & Scope (Right) -->
+        <div>
+          <div class="meta-sheet-card">
+            <span class="label" data-en="Contract & Value" data-ar="بيانات التعاقد والقيمة">Contract & Value</span>
+            <div id="proj-value-badge" class="meta-sheet-value-badge">SAR 2.63 Billion</div>
+
+            <div class="meta-spec-table">
+              <div class="meta-spec-row">
+                <span class="label" data-en="Employer" data-ar="شركة المقاولات">Employer</span>
+                <span style="font-size:0.9rem;color:var(--ink);font-weight:500;" id="proj-employer">-</span>
+              </div>
+              <div class="meta-spec-row">
+                <span class="label" data-en="Client" data-ar="المالك / العميل">Client</span>
+                <span style="font-size:0.9rem;color:var(--ink);font-weight:500;" id="proj-client">-</span>
+              </div>
+              <div class="meta-spec-row">
+                <span class="label" data-en="Consultant" data-ar="الاستشاري">Consultant</span>
+                <span style="font-size:0.9rem;color:var(--ink);font-weight:500;" id="proj-consultant">-</span>
+              </div>
+              <div class="meta-spec-row">
+                <span class="label" data-en="Timeline" data-ar="الفترة الزمنية">Timeline</span>
+                <span style="font-size:0.9rem;color:var(--ink);font-weight:500;" id="proj-period">-</span>
+              </div>
+              <div class="meta-spec-row">
+                <span class="label" data-en="My Role" data-ar="دوري في المشروع">My Role</span>
+                <span style="font-size:0.9rem;color:var(--accent);font-weight:600;" id="proj-role">-</span>
+              </div>
+            </div>
+
+            <span class="label" data-en="MEP Procurement & Technical Scope" data-ar="نطاق أعمال التوريد والكهروميكانيك">MEP Procurement & Technical Scope</span>
+            <div class="scope-chips-group" id="proj-scope-chips">
+              <!-- Rendered dynamically -->
+            </div>
+
+            <div style="border-top:1px solid var(--line);margin-top:24px;padding-top:20px;">
+              <p style="color:var(--ink-dim);font-size:0.92rem;line-height:1.7;" id="proj-summary-text"></p>
+            </div>
+
+            <div style="margin-top:24px;display:flex;gap:12px;">
+              <a class="btn-pill-primary" style="flex:1;justify-content:center;" id="inquire-project-btn" href="" target="_blank">
+                <i class="fab fa-whatsapp"></i> <span data-en="Inquire About This Scope" data-ar="استفسار عن هذا النطاق">Inquire About This Scope</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-overlay" id="lightbox-modal">
+    <button class="lightbox-close-btn" id="lightbox-close"><i class="fas fa-times"></i></button>
+    <div class="lightbox-img-box">
+      <img id="lightbox-full-img" src="" alt="Enlarged Project Photo" />
+    </div>
+  </div>
+
+  
+    <footer class="footer-high-end">
+      <div class="container">
+        <div class="footer-grid-top">
+          <div>
+            <h3 class="font-display" style="font-size:1.4rem;font-weight:600;color:var(--ink);margin-bottom:8px;">Eng. Mostafa Abdelghany</h3>
+            <p style="color:var(--ink-dim);font-size:0.92rem;max-width:380px;line-height:1.7;" data-en="MEP Procurement Section Head & Engineering Consultant. Translating complex engineering specifications into optimized procurement packages." data-ar="رئيس قسم مشتريات الكهروميكانيك (MEP) واستشاري هندسي. تحويل المواصفات الهندسية المعقدة إلى حزم شراء ومناقصات محسوبة بأعلى كفاءة.">MEP Procurement Section Head & Engineering Consultant. Translating complex engineering specifications into optimized procurement packages.</p>
+          </div>
+          <div>
+            <div class="footer-col-title" data-en="Reach" data-ar="تواصل مباشر">Reach</div>
+            <div class="footer-link-list">
+              <a class="footer-link-item" href="mailto:engmostafamahoud2012@gmail.com"><i class="fas fa-envelope gold-text"></i> engmostafamahoud2012@gmail.com</a>
+              <a class="footer-link-item" href="tel:+966502582122"><i class="fas fa-phone gold-text"></i> +966 502 582 122</a>
+              <a class="footer-link-item" href="https://wa.me/966502582122" target="_blank"><i class="fab fa-whatsapp gold-text"></i> WhatsApp Direct</a>
+              <a class="footer-link-item" href="https://www.linkedin.com/in/mostafa-abdelghany-procurement/" target="_blank"><i class="fab fa-linkedin gold-text"></i> LinkedIn Profile</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title" data-en="Navigation" data-ar="أقسام الموقع">Navigation</div>
+            <div class="footer-link-list">
+              <a class="footer-link-item" href="projects.html" data-en="Projects Directory" data-ar="دليل المشاريع">Projects Directory</a>
+              <a class="footer-link-item" href="services.html" data-en="Freelance & Consulting" data-ar="الخدمات والفريلانس">Freelance & Consulting</a>
+              <a class="footer-link-item" href="software.html" data-en="Software Stack" data-ar="البرمجيات">Software Stack</a>
+              <a class="footer-link-item" href="certificates.html" data-en="Credentials & SCE" data-ar="الاعتمادات والشهادات">Credentials & SCE</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-bar">
+          <div>© 2026 ENG. MOSTAFA ABDELGHANY — ALL RIGHTS RESERVED</div>
+          <div>RIYADH, SAUDI ARABIA · SCE #1084929</div>
+        </div>
+      </div>
     </footer>
-
-    <!-- Floating CV Button -->
-    <a href="assets/docs/Mostafa_Abdelghany_Procurement_CV.pdf" download id="cv-float-btn" class="cv-float-btn" title="Download CV">
-        <i class="fas fa-download"></i>
-        <span data-en="CV" data-ar="السيرة">CV</span>
-    </a>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- Core Scripts -->
-    <script src="scripts/projects-data.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/animations.js"></script>
-    <script src='scripts/project-detail.js'></script>
+    
+  <a class="cv-float-btn" id="cv-float-btn" href="Mostafa Abdelghany - Procurement CV.pdf" target="_blank" title="Download CV">
+    <i class="fas fa-file-pdf" style="font-size:16px;"></i>
+    <span>CV</span>
+  </a>
+  <script src="scripts/projects-data.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/project-detail.js"></script>
 </body>
 </html>

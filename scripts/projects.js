@@ -1,20 +1,17 @@
 /**
  * Projects Hub Page Script (projects.html)
- * Dynamically renders all 14 projects, handles live search, country filter,
- * sector pills, and seamless navigation to project-detail.html?id=...
+ * Dynamically renders all 14 projects using high-end editorial cards,
+ * handles live search, country pills, and seamless navigation to project-detail.html?id=...
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('projects-grid-container');
-    const searchInput = document.getElementById('project-search-input');
-    const countryTabs = document.querySelectorAll('.filter-tab[data-filter]');
-    const sectorPills = document.querySelectorAll('.sector-pill[data-sector]');
-    const resultsCountEl = document.getElementById('projects-count-display');
+    const searchInput = document.getElementById('project-search');
+    const countryPills = document.querySelectorAll('#country-pills .filter-pill');
 
     if (!container || typeof PROJECTS_DATA === 'undefined') return;
 
     let activeCountry = 'all';
-    let activeSector = 'all';
     let searchQuery = '';
 
     const renderProjects = () => {
@@ -24,8 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const filtered = PROJECTS_DATA.filter(p => {
             // Country filter
             if (activeCountry !== 'all' && p.category !== activeCountry) return false;
-            // Sector filter
-            if (activeSector !== 'all' && p.sector !== activeSector) return false;
             // Search filter
             if (searchQuery.trim() !== '') {
                 const q = searchQuery.toLowerCase();
@@ -36,67 +31,39 @@ document.addEventListener('DOMContentLoaded', () => {
             return true;
         });
 
-        if (resultsCountEl) {
-            resultsCountEl.textContent = filtered.length;
-        }
-
         if (filtered.length === 0) {
             container.innerHTML = `
-                <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-secondary);">
-                    <i class="fas fa-search" style="font-size: 3rem; color: var(--gold-primary); margin-bottom: 15px;"></i>
-                    <h3 style="color: var(--text-primary); margin-bottom: 8px;">${isAr ? 'لم يتم العثور على مشاريع' : 'No projects found'}</h3>
-                    <p>${isAr ? 'جرب البحث بكلمات أخرى أو اختر قطاعاً مختلفاً' : 'Try adjusting your search criteria or filter options'}</p>
+                <div style="grid-column: 1 / -1; text-align: center; padding: 80px 20px; color: var(--ink-dim);">
+                    <i class="fas fa-search" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 16px;"></i>
+                    <h3 style="color: var(--ink); margin-bottom: 8px;">${isAr ? 'لم يتم العثور على مشاريع مطابقة' : 'No matching projects found'}</h3>
+                    <p style="font-size: 0.9rem;">${isAr ? 'جرب البحث بكلمات أخرى أو تغيير الدولة' : 'Try adjusting your search criteria or country filter'}</p>
                 </div>
             `;
             return;
         }
 
-        filtered.forEach(p => {
+        filtered.forEach((p, idx) => {
             const title = isAr ? p.titleAr : p.titleEn;
             const company = isAr ? p.companyAr : p.companyEn;
-            const sector = isAr ? p.sectorAr : p.sectorEn;
-            const period = isAr ? p.periodAr : p.period;
             const location = isAr ? p.locationAr : p.locationEn;
             const value = isAr ? (p.valueAr || '') : (p.valueEn || '');
-            const role = isAr ? p.roleAr : p.roleEn;
+            const isFlagship = idx === 0 && activeCountry === 'all' && searchQuery === '';
 
-            const card = document.createElement('div');
-            card.className = `project-card ${p.featured ? 'featured' : ''} animate-on-scroll is-visible`;
+            const card = document.createElement('a');
+            card.href = `project-detail.html?id=${p.id}`;
+            card.className = `editorial-project-card ${isFlagship ? 'editorial-card-flagship' : 'editorial-card-standard'}`;
+            
             card.innerHTML = `
-                <div class="card-image">
+                <div class="editorial-img-box">
                     <img src="${p.coverImage}" alt="${title}" loading="lazy">
-                    <div class="card-overlay"></div>
-                    ${p.featured ? `<span class="card-badge featured-badge">${isAr ? 'مشروع ريادي' : 'Flagship Project'}</span>` : ''}
-                    <span class="card-country"><i class="fas fa-flag"></i> ${p.category.toUpperCase()}</span>
+                    <div class="editorial-card-scrim"></div>
                 </div>
-                <div class="card-content">
-                    <div class="card-accent"></div>
-                    <div style="font-size: 0.75rem; color: var(--accent-teal); font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">${sector}</div>
-                    <h3 class="card-title">${title}</h3>
-                    <p class="card-company"><i class="fas fa-building"></i> ${company}</p>
-                    <div class="card-meta">
-                        <span><i class="fas fa-calendar"></i> ${period}</span>
-                        <span><i class="fas fa-map-marker-alt"></i> ${location}</span>
-                    </div>
-                    ${value ? `<div class="card-value">${value}</div>` : ''}
-                </div>
-                <div class="card-hover-info">
-                    <p class="hover-role">${role}</p>
-                    <p class="hover-client">${isAr ? 'عدد الصور المتاحة:' : 'Available photos:'} ${p.images.length} 📸</p>
-                    <a href="project-detail.html?id=${p.id}" class="btn-view-details">
-                        <span>${isAr ? 'عرض تفاصيل المشروع الكاملة والجاليري' : 'View Full Details & Gallery'}</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                <div class="editorial-card-content">
+                    <span class="label" style="color:var(--accent);">${company} ${value ? '· ' + value : ''}</span>
+                    <h3 class="editorial-card-title">${title}</h3>
+                    <span class="editorial-card-location">${location} · ${p.images.length} ${isAr ? 'صور موثقة' : 'Photos'}</span>
                 </div>
             `;
-
-            // Card click to navigate
-            card.addEventListener('click', (e) => {
-                // Avoid double trigger if clicking link directly
-                if (e.target.tagName !== 'A') {
-                    window.location.href = `project-detail.html?id=${p.id}`;
-                }
-            });
 
             container.appendChild(card);
         });
@@ -108,22 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Re-render on language change
     window.addEventListener('languageChanged', renderProjects);
 
-    // Country tab click
-    countryTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            countryTabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-            activeCountry = tab.getAttribute('data-filter');
-            renderProjects();
-        });
-    });
-
-    // Sector pills click
-    sectorPills.forEach(pill => {
+    // Country pill click
+    countryPills.forEach(pill => {
         pill.addEventListener('click', () => {
-            sectorPills.forEach(p => p.classList.remove('active'));
+            countryPills.forEach(p => p.classList.remove('active'));
             pill.classList.add('active');
-            activeSector = pill.getAttribute('data-sector');
+            activeCountry = pill.getAttribute('data-filter');
             renderProjects();
         });
     });
