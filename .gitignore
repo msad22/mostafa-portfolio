@@ -1,0 +1,13 @@
+*.ogg
+*.xlsx
+*.docx
+*.pyc
+__pycache__/
+*.png
+!assets/**
+!styles/**
+!scripts/**
+!index.html
+!README.md
+!generate_index.py
+!verify_assets.py

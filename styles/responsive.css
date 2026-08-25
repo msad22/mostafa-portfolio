@@ -1,0 +1,119 @@
+/* ============================================
+   PORTFOLIO V2 — RESPONSIVE
+   Mobile-First Breakpoints
+   ============================================ */
+
+/* ---- Base: Mobile (<768px) ---- */
+@media (max-width: 767px) {
+  /* Nav */
+  .nav-links {
+    position: fixed; top: 0; right: -100%; width: 75%; height: 100vh;
+    background: rgba(10, 25, 47, 0.98); backdrop-filter: blur(20px);
+    flex-direction: column; padding: 80px 40px 40px; gap: 0;
+    transition: right 0.4s ease; z-index: 999;
+  }
+  .nav-links.active { right: 0; }
+  .nav-link { padding: 16px 0; border-bottom: 1px solid rgba(196,163,90,0.1); font-size: 1.1rem; }
+  .hamburger { display: flex; }
+
+  /* Hero */
+  .hero-content { flex-direction: column-reverse; text-align: center; gap: 30px; padding: 0 1rem; }
+  .hero-name { font-size: 2.5rem; }
+  .hero-name span { display: inline; }
+  .hero-desc { font-size: 0.95rem; }
+  .hero-btns { justify-content: center; }
+  .hero-badges { justify-content: center; }
+  .headshot-wrapper { width: 200px; height: 200px; }
+  .hero-image { display: flex; justify-content: center; }
+
+  /* About */
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .kpi-number { font-size: 2rem; }
+
+  /* Projects */
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card.featured { grid-column: span 1; }
+  .project-card.featured .card-image { height: 240px; }
+  .card-hover-info { transform: translateY(0); position: relative; padding: 12px 20px; background: rgba(10,25,47,0.5); }
+
+  /* Timeline */
+  .timeline::before { left: 20px; }
+  .timeline-item, .timeline-item[data-side="right"] { width: 100%; margin-left: 0; padding-left: 50px; padding-right: 0; text-align: left; }
+  .timeline-item[data-side="left"] { text-align: left; }
+  .timeline-dot, .timeline-item[data-side="right"] .timeline-dot, .timeline-item[data-side="left"] .timeline-dot {
+    left: 12px !important; right: auto !important;
+  }
+  .timeline-item[data-side="left"] .timeline-card,
+  .timeline-item[data-side="right"] .timeline-card { transform: translateX(0); }
+
+  /* Map */
+  #project-map { height: 350px; }
+
+  /* Certificates */
+  .certs-grid { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-content { grid-template-columns: 1fr; gap: 40px; }
+
+  /* Modal */
+  .modal-content { width: 95%; }
+  .carousel-track img { height: 250px; }
+  .modal-info-grid { grid-template-columns: 1fr; }
+
+  /* Section */
+  .section { padding: 60px 0; }
+  .section-title { font-size: 1.5rem; margin-bottom: 40px; }
+
+  /* Floating CV */
+  .cv-float-btn { width: 50px; height: 50px; bottom: 20px; right: 20px; }
+  .cv-float-btn span { display: none; }
+}
+
+/* ---- Tablet (768px-1023px) ---- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-content { gap: 40px; }
+  .hero-name { font-size: 3rem; }
+  .headshot-wrapper { width: 260px; height: 260px; }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-card.featured { grid-column: span 2; }
+  .kpi-grid { grid-template-columns: repeat(4, 1fr); }
+  .kpi-number { font-size: 2.2rem; }
+  .contact-content { grid-template-columns: 1fr; }
+}
+
+/* ---- Desktop (1024px+) ---- */
+@media (min-width: 1024px) {
+  .projects-grid { grid-template-columns: repeat(3, 1fr); }
+  .project-card.featured { grid-column: span 2; }
+}
+
+/* ---- Large screens (1440px+) ---- */
+@media (min-width: 1440px) {
+  .container { max-width: 1400px; }
+  .hero-name { font-size: 4.5rem; }
+  .headshot-wrapper { width: 360px; height: 360px; }
+}
+
+/* ---- Touch-friendly ---- */
+@media (hover: none) {
+  .card-hover-info { transform: translateY(0); position: relative; background: rgba(10,25,47,0.5); padding: 12px 20px; }
+  .project-card:hover { transform: none; }
+}
+
+/* ---- Reduced Motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .animate-on-scroll { opacity: 1; transform: none; }
+  .particles-bg { display: none; }
+  .headshot-ring { animation: none; }
+  .headshot-glow { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Print ---- */
+@media print {
+  .navbar, .scroll-indicator, #scroll-progress, .cv-float-btn,
+  .particles-bg, .map-section, .contact-form, .footer-links { display: none !important; }
+  body { color: #000; background: #fff; }
+  .section { page-break-inside: avoid; padding: 20px 0; }
+}

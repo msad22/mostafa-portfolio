@@ -1,0 +1,175 @@
+/* ============================================
+   PORTFOLIO V2 — ANIMATIONS
+   ============================================ */
+
+/* ---- Animate On Scroll ---- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1),
+              transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Stagger Delays ---- */
+.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.animate-on-scroll:nth-child(2) { transition-delay: 100ms; }
+.animate-on-scroll:nth-child(3) { transition-delay: 200ms; }
+.animate-on-scroll:nth-child(4) { transition-delay: 300ms; }
+.animate-on-scroll:nth-child(5) { transition-delay: 400ms; }
+.animate-on-scroll:nth-child(6) { transition-delay: 500ms; }
+
+/* ---- Fade In Variations ---- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Scale ---- */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ---- Shimmer / Gold Glow ---- */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-text {
+  background: linear-gradient(90deg, var(--gold-primary) 0%, var(--gold-light) 50%, var(--gold-primary) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ---- Gradient Flow Background ---- */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---- Bounce ---- */
+@keyframes bounceIn {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ---- Project Card 3D Tilt ---- */
+.project-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* ---- Timeline slide animations ---- */
+.timeline-item[data-side="left"] .timeline-card {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.timeline-item[data-side="right"] .timeline-card {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.timeline-item.is-visible .timeline-card {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---- Parallax Support ---- */
+.parallax {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* ---- Section Title Underline ---- */
+.section-title .title-line {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.section-title.is-visible .title-line {
+  transform: scaleX(1);
+}
+
+/* ---- Map Marker Bounce ---- */
+.marker-bounce {
+  animation: bounceIn 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+/* ---- KPI Counter ---- */
+.kpi-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.kpi-grid.is-visible .kpi-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+.kpi-grid.is-visible .kpi-card:nth-child(1) { transition-delay: 0ms; }
+.kpi-grid.is-visible .kpi-card:nth-child(2) { transition-delay: 150ms; }
+.kpi-grid.is-visible .kpi-card:nth-child(3) { transition-delay: 300ms; }
+.kpi-grid.is-visible .kpi-card:nth-child(4) { transition-delay: 450ms; }
+
+/* ---- Competency Tags Stagger ---- */
+.competency-tags .tag {
+  opacity: 0;
+  transform: translateY(10px) scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.competency-tags.is-visible .tag {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.competency-tags.is-visible .tag:nth-child(1) { transition-delay: 0ms; }
+.competency-tags.is-visible .tag:nth-child(2) { transition-delay: 50ms; }
+.competency-tags.is-visible .tag:nth-child(3) { transition-delay: 100ms; }
+.competency-tags.is-visible .tag:nth-child(4) { transition-delay: 150ms; }
+.competency-tags.is-visible .tag:nth-child(5) { transition-delay: 200ms; }
+.competency-tags.is-visible .tag:nth-child(6) { transition-delay: 250ms; }
+.competency-tags.is-visible .tag:nth-child(7) { transition-delay: 300ms; }
+.competency-tags.is-visible .tag:nth-child(8) { transition-delay: 350ms; }
+.competency-tags.is-visible .tag:nth-child(9) { transition-delay: 400ms; }
+.competency-tags.is-visible .tag:nth-child(10) { transition-delay: 450ms; }
+
+/* ---- Certificate Cards ---- */
+.cert-card {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---- Hero Element Stagger ---- */
+.hero-section .animate-on-scroll:nth-child(1) { transition-delay: 200ms; }
+.hero-section .animate-on-scroll:nth-child(2) { transition-delay: 400ms; }
+.hero-section .animate-on-scroll:nth-child(3) { transition-delay: 600ms; }
+.hero-section .animate-on-scroll:nth-child(4) { transition-delay: 800ms; }
+.hero-section .animate-on-scroll:nth-child(5) { transition-delay: 1000ms; }
+.hero-section .animate-on-scroll:nth-child(6) { transition-delay: 1200ms; }
+
+/* ---- Floating Animation ---- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
