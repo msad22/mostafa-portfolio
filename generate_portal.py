@@ -179,7 +179,7 @@ def build_index():
           <div class="stat-mono-label" data-en="Documented Mega Projects" data-ar="مشاريع كبرى موثقة">Documented Mega Projects</div>
         </div>
         <div class="stat-cell">
-          <div class="stat-big-number animate-counter" data-target="9" data-suffix="+">0</div>
+          <div class="stat-big-number animate-counter" data-target="12" data-suffix="+">0</div>
           <div class="stat-mono-label" data-en="Years of Leadership" data-ar="سنوات خبرة قيادية">Years of Leadership</div>
         </div>
         <div class="stat-cell">
@@ -271,7 +271,7 @@ def build_index():
     <div class="container">
       <div class="section-heading-block" style="text-align:center;">
         <span class="label gold-text" data-en="Professional Background" data-ar="?????? ??????? ????????">Professional Background</span>
-        <h2 class="section-heading-title" data-en="About & Engineering Philosophy" data-ar="???? ??? ?????? ?????">About & Engineering Philosophy</h2>
+        <h2 class="section-heading-title" data-en="About" data-ar="???? ???">About</h2>
       </div>
 
       <div class="about-architect-grid" style="margin-top: 40px;">
@@ -288,8 +288,8 @@ def build_index():
         <!-- Bio & Philosophy -->
         <div>
           <h2 class="font-display" style="font-size:2.2rem;font-weight:700;color:var(--ink);margin-bottom:18px;" data-en="Turning Procurement into a Strategic Profit Center" data-ar="????? ????????? ??? ???? ????? ????????? ????????">Turning Procurement into a Strategic Profit Center</h2>
-          <p class="about-bio-text" data-en="With 9+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen." data-ar="????? ???? ?? 9 ????? ?? ????? ??????? ???????? ?????? ??????? ???????? ????????? ?? ???????? ????? ???? ????????? ??????????????? ?????? ????? ????? ????? ??? ????????? ???? ???? ???? ?????.">With 9+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen.</p>
-          <p class="about-bio-text" data-en="Currently serving as MEP Procurement Section Head at Zaid Al Hussain Group in Riyadh, I spearhead major subcontracts, material approvals, FIDIC contract administration, and value engineering initiatives for landmark projects like the King Abdullah International Gardens (SAR 2.63B)." data-ar="???? ?????? ???? ???? ??? ????????? ??????????????? ??????? ??? ?????? ??????? ?? ??????? ???? ???? ?????? ????????? ???????? ??????? ???? ???????? ?????? ?????? ??????? ?????? ??? ????? ????? ??????? ???????? (2.63 ????? ????).">Currently serving as MEP Procurement Section Head at Zaid Al Hussain Group in Riyadh, I spearhead major subcontracts, material approvals, FIDIC contract administration, and value engineering initiatives for landmark projects like the King Abdullah International Gardens (SAR 2.63B).</p>
+          <p class="about-bio-text" data-en="With 12+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen." data-ar="????? ???? ?? 12 ??? ?? ????? ??????? ???????? ?????? ??????? ???????? ????????? ?? ???????? ????? ???? ????????? ??????????????? ?????? ????? ????? ????? ??? ????????? ???? ???? ???? ?????.">With 12+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen.</p>
+          <p class="about-bio-text" data-en="Currently serving as MEP Procurement Section Head at Zaid Al Hussain Group in Riyadh, I spearhead major subcontracts, material approvals, FIDIC contract administration, and value engineering initiatives for landmark projects like the King Abdullah International Gardens (SAR 2.63B)." data-ar="???? ?????? ???? ???? ??? ????????? ??????????????? ??????? ????? ?? ??????? ???? ???? ?????? ????????? ???????? ??????? ???? ???????? ?????? ?????? ??????? ?????? ??? ????? ????? ??????? ???????? (2.63 ????? ????).">Currently serving as MEP Procurement Section Head at Zaid Al Hussain Group in Riyadh, I spearhead major subcontracts, material approvals, FIDIC contract administration, and value engineering initiatives for landmark projects like the King Abdullah International Gardens (SAR 2.63B).</p>
 
           <div class="philosophy-callout-card">
             <div class="philosophy-quote" data-en="&ldquo;Procurement in mega-projects isn't merely buying equipment; it is engineering the commercial backbone that guarantees timely execution, technical compliance, and substantial margin optimization.&rdquo;" data-ar="&ldquo;????????? ?? ???????? ?????? ???? ???? ???? ?????? ?? ?? ????? ?????? ?????? ??????? ???? ???? ??????? ?? ????? ??????? ???????? ??????? ?????? ???? ????? ?????.&rdquo;">&ldquo;Procurement in mega-projects isn't merely buying equipment; it is engineering the commercial backbone that guarantees timely execution, technical compliance, and substantial margin optimization.&rdquo;</div>
@@ -418,7 +418,7 @@ def build_about():
   <header class="page-intro-header">
     <div class="container">
       <span class="page-intro-tag" data-en="Professional Background" data-ar="السيرة المهنية والخبرات">Professional Background</span>
-      <h1 class="page-intro-title" data-en="About & Engineering Philosophy" data-ar="نبذة عني وفلسفة العمل الهندسي">About & Engineering Philosophy</h1>
+      <h1 class="page-intro-title" data-en="About" data-ar="نبذة عني وفلسفة العمل الهندسي">About</h1>
       <p class="page-intro-subtitle" data-en="B.Sc. Mechanical Power Engineer with over 9 years of specialized experience in mega-construction and MEP procurement." data-ar="مهندس ميكانيكا قوى معتمد بأكثر من 9 سنوات من الخبرة المتخصصة في كبرى مشاريع الإنشاءات والمشتريات الهندسية.">B.Sc. Mechanical Power Engineer with over 9 years of specialized experience in mega-construction and MEP procurement.</p>
     </div>
   </header>
@@ -439,7 +439,7 @@ def build_about():
         <!-- Bio & Philosophy -->
         <div>
           <h2 class="font-display" style="font-size:2.2rem;font-weight:700;color:var(--ink);margin-bottom:18px;" data-en="Turning Procurement into a Strategic Profit Center" data-ar="تحويل المشتريات إلى مركز قوة وربحية استراتيجية للمشاريع">Turning Procurement into a Strategic Profit Center</h2>
-          <p class="about-bio-text" data-en="With 9+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen." data-ar="بخبرة تزيد عن 9 سنوات في إدارة مشاريع البنية التحتية والمباني المليارية في السعودية ومصر، أقود قطاع المشتريات الهندسية بدقة هندسية بالغة ورؤية مالية واستراتيجية تحقق أعلى وفر وجودة.">With 9+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen.</p>
+          <p class="about-bio-text" data-en="With 12+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen." data-ar="بخبرة تزيد عن 9 سنوات في إدارة مشاريع البنية التحتية والمباني المليارية في السعودية ومصر، أقود قطاع المشتريات الهندسية بدقة هندسية بالغة ورؤية مالية واستراتيجية تحقق أعلى وفر وجودة.">With 12+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen.</p>
           <p class="about-bio-text" data-en="Currently serving as MEP Procurement Section Head at Zaid Al Hussain Group in Riyadh, I spearhead major subcontracts, material approvals, FIDIC contract administration, and value engineering initiatives for landmark projects like the King Abdullah International Gardens (SAR 2.63B)." data-ar="أشغل حالياً منصب رئيس قسم مشتريات الكهروميكانيك بمجموعة زيد الحسين بالرياض، حيث أقود عقود الباطن الرئيسية، اعتمادات المواد، إدارة عقود الفيديك، وهندسة القيمة لمشاريع عملاقة على رأسها حدائق الملك عبدالله العالمية (2.63 مليار ريال).">Currently serving as MEP Procurement Section Head at Zaid Al Hussain Group in Riyadh, I spearhead major subcontracts, material approvals, FIDIC contract administration, and value engineering initiatives for landmark projects like the King Abdullah International Gardens (SAR 2.63B).</p>
 
           <div class="philosophy-callout-card">
@@ -1113,6 +1113,3 @@ for name, content in pages.items():
     print(f"Generated Rich Expanded V3: {name} ({len(content.encode('utf-8')):,} bytes)")
 
 print("\nAll 7 Expanded Multi-Page files generated successfully!")
-
-
-
