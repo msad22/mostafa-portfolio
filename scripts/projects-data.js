@@ -25,6 +25,8 @@ const PROJECTS_DATA = [
         valueAr: "2.63 مليار ريال سعودي",
         clientEn: "Riyadh Municipality (أمانة منطقة الرياض)",
         clientAr: "أمانة منطقة الرياض",
+        consultantEn: "Dar Al-Handasah",
+        consultantAr: "دار الهندسة",
         featured: true,
         coverImage: "assets/images/projects/kaig_6.jpg",
         images: [
@@ -73,6 +75,8 @@ const PROJECTS_DATA = [
         valueAr: "مشروع مدينة متكاملة بمليارات الجنيهات",
         clientEn: "Talaat Moustafa Group (TMG)",
         clientAr: "مجموعة طلعت مصطفى للتطوير العقاري",
+        consultantEn: "SWA Group & ECG",
+        consultantAr: "مجموعة SWA وجماعة المهندسين الاستشاريين (ECG)",
         featured: true,
         coverImage: "assets/images/projects/noor_city_1.jpg",
         images: [
@@ -116,6 +120,8 @@ const PROJECTS_DATA = [
         valueAr: "مشروع أبراج فندقية وسكنية فاخرة",
         clientEn: "Marakez Real Estate Development",
         clientAr: "شركة مراكز للاستثمار العقاري",
+        consultantEn: "Machado Silvetti / DSC International",
+        consultantAr: "ماتشادو سيلفيتي / دي إس سي إنترناشيونال",
         featured: true,
         coverImage: "assets/images/projects/aeon_towers_1.jpeg",
         images: [
@@ -156,6 +162,8 @@ const PROJECTS_DATA = [
         valueAr: "مشروع قومي استراتيجي",
         clientEn: "Zewail City of Science and Technology Foundation",
         clientAr: "مؤسسة مدينة زويل للعلوم والتكنولوجيا",
+        consultantEn: "Dar Al-Handasah & ECG",
+        consultantAr: "دار الهندسة وجماعة المهندسين الاستشاريين",
         featured: true,
         coverImage: "assets/images/projects/zewail_city_1.jpg",
         images: [
@@ -195,6 +203,8 @@ const PROJECTS_DATA = [
         valueAr: "توسعات جامعية كبرى",
         clientEn: "Zagazig University",
         clientAr: "جامعة الزقازيق",
+        consultantEn: "ECG - Engineering Consultants Group",
+        consultantAr: "جماعة المهندسين الاستشاريين (ECG)",
         featured: false,
         coverImage: "assets/images/projects/zagazig_uni_1.jpeg",
         images: [
@@ -234,6 +244,8 @@ const PROJECTS_DATA = [
         valueAr: "مشروع فندقي عالمي",
         clientEn: "Hilton Worldwide / Private Investment",
         clientAr: "مجموعة هيلتون العالمية",
+        consultantEn: "Omrania & Goettsch Partners",
+        consultantAr: "العمرانية و جويتش بارتنرز",
         featured: false,
         coverImage: "assets/images/projects/hilton_riyadh_3.jpg",
         images: [
@@ -273,6 +285,8 @@ const PROJECTS_DATA = [
         valueAr: "أضخم مشروع نقل عام في العالم",
         clientEn: "Royal Commission for Riyadh City (RCRC)",
         clientAr: "الهيئة الملكية لمدينة الرياض",
+        consultantEn: "RMTC (Parsons, Egis, Systra)",
+        consultantAr: "ائتلاف RMTC (بارسونز، إيجيس، سيسترا)",
         featured: false,
         coverImage: "assets/images/projects/riyadh_metro_1.jpg",
         images: [
@@ -311,6 +325,8 @@ const PROJECTS_DATA = [
         valueAr: "فندق سياحي دولي",
         clientEn: "Radisson Hotel Group",
         clientAr: "مجموعة فنادق راديسون",
+        consultantEn: "Khatib & Alami",
+        consultantAr: "خطيب وعلمي",
         featured: false,
         coverImage: "assets/images/projects/radisson_riyadh_1.jpg",
         images: [
@@ -346,6 +362,8 @@ const PROJECTS_DATA = [
         valueAr: "مشروع مطار دولي استراتيجي",
         clientEn: "Egyptian Airports Company / Ministry of Civil Aviation",
         clientAr: "الشركة المصرية للمطارات / وزارة الطيران المدني",
+        consultantEn: "Dar Al-Handasah",
+        consultantAr: "دار الهندسة",
         featured: false,
         coverImage: "assets/images/projects/berenice_airport_1.jpeg",
         images: [
@@ -382,6 +400,8 @@ const PROJECTS_DATA = [
         valueAr: "صرح معارض ومؤتمرات كبرى",
         clientEn: "Egyptian Armed Forces Engineering Authority",
         clientAr: "الهيئة الهندسية للقوات المسلحة",
+        consultantEn: "ACE Moharram Bakhoum",
+        consultantAr: "محرم باخوم ACE",
         featured: false,
         coverImage: "assets/images/projects/egyptian_space_agency_1.jpeg",
         images: [
@@ -418,6 +438,8 @@ const PROJECTS_DATA = [
         valueAr: "مرافق ومستشفيات طبية",
         clientEn: "Ministry of Health, KSA",
         clientAr: "وزارة الصحة السعودية",
+        consultantEn: "RTKL & Dar Al-Handasah",
+        consultantAr: "آر تي كيه إل / دار الهندسة",
         featured: false,
         coverImage: "assets/images/project_5.jpg",
         images: [
@@ -453,6 +475,8 @@ const PROJECTS_DATA = [
         valueAr: "مجمع سكني مغلق",
         clientEn: "Private Real Estate Developer",
         clientAr: "مطور عقاري خاص",
+        consultantEn: "Khatib & Alami",
+        consultantAr: "خطيب وعلمي",
         featured: false,
         coverImage: "assets/images/project_6.jpg",
         images: [
@@ -488,6 +512,8 @@ const PROJECTS_DATA = [
         valueAr: "مشروع دفاعي واستراتيجي",
         clientEn: "Engineering Authority of the Armed Forces",
         clientAr: "الهيئة الهندسية للقوات المسلحة",
+        consultantEn: "ACE Moharram Bakhoum",
+        consultantAr: "محرم باخوم ACE",
         featured: false,
         coverImage: "assets/images/project_12.jpg",
         images: [
@@ -524,6 +550,8 @@ const PROJECTS_DATA = [
         valueAr: "مجمع سكني فاخر",
         clientEn: "La Verde Developments",
         clientAr: "شركة لافيردي للتطوير العقاري",
+        consultantEn: "DSC International",
+        consultantAr: "دي إس سي إنترناشيونال",
         featured: false,
         coverImage: "assets/images/project_14.jpg",
         images: [
