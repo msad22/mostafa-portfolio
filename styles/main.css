@@ -933,3 +933,119 @@ ul { list-style: none; }
   font-size: 1rem;
   white-space: nowrap;
 }
+/* ==========================================================================
+   10. EDITORIAL PROJECTS GRID & WORKFLOW GRID
+   ========================================================================== */
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.workflow-step {
+  background: var(--bg-card);
+  padding: 35px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+.workflow-step:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.1);
+}
+.workflow-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto 20px;
+}
+.workflow-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.workflow-desc {
+  font-size: 0.95rem;
+  color: var(--ink-dim);
+  line-height: 1.6;
+}
+
+.editorial-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.editorial-card-flagship {
+  grid-column: 1 / -1;
+}
+.editorial-project-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  transition: var(--transition-smooth);
+}
+.editorial-project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+.editorial-img-box {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  position: relative;
+  overflow: hidden;
+}
+.editorial-card-flagship .editorial-img-box {
+  aspect-ratio: 24 / 9;
+}
+.editorial-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.editorial-project-card:hover .editorial-img-box img {
+  transform: scale(1.05);
+}
+.editorial-card-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11,15,25,0.9) 0%, transparent 60%);
+  opacity: 0.8;
+  transition: var(--transition-smooth);
+}
+.editorial-project-card:hover .editorial-card-scrim {
+  opacity: 0.5;
+}
+.editorial-card-content {
+  padding: 24px;
+}
+.editorial-card-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 10px 0 6px;
+}
+.editorial-card-flagship .editorial-card-title {
+  font-size: 2.2rem;
+}
+.editorial-card-location {
+  font-size: 0.95rem;
+  color: var(--ink-dim);
+}
