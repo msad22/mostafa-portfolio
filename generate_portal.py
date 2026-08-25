@@ -7,8 +7,8 @@ def get_nav_html(active_page="home"):
         {"id": "home", "href": "index.html", "en": "Home", "ar": "الرئيسية"},
         {"id": "projects", "href": "projects.html", "en": "Projects", "ar": "المشاريع"},
         {"id": "services", "href": "services.html", "en": "Services", "ar": "الخدمات"},
-        {"id": "software", "href": "software.html", "en": "Software", "ar": "البرامج"},
-        {"id": "about", "href": "about.html", "en": "About", "ar": "نبذة عني"},
+        
+        {"id": "about", "href": "index.html#about", "en": "About", "ar": "???? ???"},
         {"id": "experience", "href": "experience.html", "en": "Experience", "ar": "الخبرات"},
         {"id": "certificates", "href": "certificates.html", "en": "Certificates", "ar": "الشهادات"},
         {"id": "contact", "href": "contact.html", "en": "Contact", "ar": "تواصل"},
@@ -70,8 +70,7 @@ def get_footer_html():
             <div class="footer-link-list">
               <a class="footer-link-item" href="projects.html" data-en="Projects Directory" data-ar="دليل المشاريع">Projects Directory</a>
               <a class="footer-link-item" href="services.html" data-en="Freelance & Consulting" data-ar="الخدمات والفريلانس">Freelance & Consulting</a>
-              <a class="footer-link-item" href="software.html" data-en="Software Stack" data-ar="البرمجيات">Software Stack</a>
-              <a class="footer-link-item" href="certificates.html" data-en="Credentials & SCE" data-ar="الاعتمادات والشهادات">Credentials & SCE</a>
+                            <a class="footer-link-item" href="certificates.html" data-en="Credentials & SCE" data-ar="الاعتمادات والشهادات">Credentials & SCE</a>
             </div>
           </div>
         </div>
@@ -188,8 +187,8 @@ def build_index():
           <div class="stat-mono-label" data-en="Contracting Giants" data-ar="كبريات شركات المقاولات">Contracting Giants</div>
         </div>
         <div class="stat-cell">
-          <div class="stat-big-number animate-counter" data-target="2.63" data-decimal="true" data-suffix="B SAR">0</div>
-          <div class="stat-mono-label" data-en="Flagship Tender Value" data-ar="ريال قيمة أكبر مشروع (حدائق الملك عبدالله)">Flagship Tender Value</div>
+          <div class="stat-big-number animate-counter" data-target="2.63" data-decimal="true" data-suffix="B">0</div>
+          <div class="stat-mono-label" data-en="Billion SAR Flagship Tender Value" data-ar="????? ???? ???? ????? ????">Billion SAR Flagship Tender Value</div>
         </div>
       </div>
     </div>
@@ -265,171 +264,49 @@ def build_index():
     </div>
   </section>
 
-  <!-- 5. INFINITE SOFTWARE MARQUEE -->
-  <div class="marquee-wrapper">
-    <div class="marquee-mask-left"></div>
-    <div class="marquee-mask-right"></div>
-    <div class="marquee-track">
-      <span class="marquee-item">Primavera P6 Professional</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">AutoCAD MEP</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">Revit & BIM Coordination</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">Oracle ERP Enterprise</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">SAP MM Logistics</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">Value Engineering Modeling</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">FIDIC Contract Drafting</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">Automated BOQ Takeoffs</span>
-      <span class="marquee-item">✦</span>
-      <!-- Duplicate for infinite seamless scroll -->
-      <span class="marquee-item">Primavera P6 Professional</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">AutoCAD MEP</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">Revit & BIM Coordination</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">Oracle ERP Enterprise</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">SAP MM Logistics</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">Value Engineering Modeling</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">FIDIC Contract Drafting</span>
-      <span class="marquee-item">✦</span>
-      <span class="marquee-item">Automated BOQ Takeoffs</span>
-      <span class="marquee-item">✦</span>
-    </div>
-  </div>
 
-  <!-- 6. FEATURED MEGA-PROJECTS EDITORIAL SHOWCASE -->
-  <section class="section-wrapper">
-    <div class="container">
-      <div class="section-heading-block" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
-        <div>
-          <span class="label gold-text" data-en="Documented Track Record" data-ar="سجل الإنجازات الموثق">Documented Track Record</span>
-          <h2 class="section-heading-title" data-en="Featured Mega Projects" data-ar="مختارات من أضخم المشاريع">Featured Mega Projects</h2>
-        </div>
-        <a class="btn-pill-outline" href="projects.html" data-en="View All 14 Projects" data-ar="استعراض كافة الـ 14 مشروعاً">View All 14 Projects</a>
-      </div>
 
-      <div class="editorial-projects-grid">
-        <!-- Flagship 21:9 Card: KAIG -->
-        <a class="editorial-project-card editorial-card-flagship" href="project-detail.html?id=kaig">
-          <div class="editorial-img-box">
-            <img src="assets/images/projects/kaig_6.jpg" alt="King Abdullah International Gardens (KAIG)" />
-            <div class="editorial-card-scrim"></div>
-          </div>
-          <div class="editorial-card-content">
-            <span class="label" style="color:var(--accent);" data-en="Zaid Al Hussain Group · SAR 2.63 Billion" data-ar="مجموعة زيد الحسين · 2.63 مليار ريال">Zaid Al Hussain Group · SAR 2.63 Billion</span>
-            <h3 class="editorial-card-title" data-en="King Abdullah International Gardens (KAIG)" data-ar="مشروع حدائق الملك عبدالله العالمية">King Abdullah International Gardens (KAIG)</h3>
-            <span class="editorial-card-location" data-en="Riyadh, Saudi Arabia · 2.1M m² Mega Botanical Domes & MEP Infrastructure" data-ar="الرياض، المملكة العربية السعودية · البنية التحتية والقباب النباتية العملاقة على 2.1 مليون م²">Riyadh, Saudi Arabia · 2.1M m² Mega Botanical Domes & MEP Infrastructure</span>
-          </div>
-        </a>
-
-        <!-- 2-Col Card 1: Noor City -->
-        <a class="editorial-project-card editorial-card-standard" href="project-detail.html?id=noor-city">
-          <div class="editorial-img-box">
-            <img src="assets/images/projects/noor_city_1.jpg" alt="Noor City New Capital" />
-            <div class="editorial-card-scrim"></div>
-          </div>
-          <div class="editorial-card-content">
-            <span class="label" data-en="Atrium Quality Contractors · TMG" data-ar="شركة أتريوم للمقاولات · طلعت مصطفى">Atrium Quality Contractors · TMG</span>
-            <h3 class="editorial-card-title" data-en="Noor City Integrated Megacity" data-ar="مدينة نور الذكية المتكاملة">Noor City Integrated Megacity</h3>
-            <span class="editorial-card-location" data-en="New Administrative Capital, Egypt · Infrastructure & Commercial Spine" data-ar="العاصمة الإدارية الجديدة، مصر · البنية التحتية والمحور التجاري">New Administrative Capital, Egypt · Infrastructure & Commercial Spine</span>
-          </div>
-        </a>
-
-        <!-- 2-Col Card 2: Aeon Towers -->
-        <a class="editorial-project-card editorial-card-standard" href="project-detail.html?id=aeon-towers">
-          <div class="editorial-img-box">
-            <img src="assets/images/projects/aeon_towers_1.jpeg" alt="Aeon Towers" />
-            <div class="editorial-card-scrim"></div>
-          </div>
-          <div class="editorial-card-content">
-            <span class="label" data-en="Hassan Allam Construction · Marakez" data-ar="حسن علام للإنشاءات · مراكز">Hassan Allam Construction · Marakez</span>
-            <h3 class="editorial-card-title" data-en="Aeon Towers (3x High-Rise 72m)" data-ar="أبراج إيون السكنية الشاهقة">Aeon Towers (3x High-Rise 72m)</h3>
-            <span class="editorial-card-location" data-en="6th of October City, Egypt · Central HVAC & Pumping Plants" data-ar="مدينة السادس من أكتوبر، مصر · أنظمة التكييف ومحطات الرفع المركزية">6th of October City, Egypt · Central HVAC & Pumping Plants</span>
-          </div>
-        </a>
-
-        <!-- 2-Col Card 3: Zewail City -->
-        <a class="editorial-project-card editorial-card-standard" href="project-detail.html?id=zewail-city">
-          <div class="editorial-img-box">
-            <img src="assets/images/projects/zewail_city_1.jpg" alt="Zewail City of Science and Technology" />
-            <div class="editorial-card-scrim"></div>
-          </div>
-          <div class="editorial-card-content">
-            <span class="label" data-en="Hassan Allam Construction" data-ar="حسن علام للإنشاءات">Hassan Allam Construction</span>
-            <h3 class="editorial-card-title" data-en="Zewail City of Science & Technology" data-ar="مدينة زويل للعلوم والتكنولوجيا">Zewail City of Science & Technology</h3>
-            <span class="editorial-card-location" data-en="6th of October City, Egypt · Specialized Cleanrooms & Laboratories" data-ar="مدينة السادس من أكتوبر، مصر · المعامل والمختبرات المتطورة">6th of October City, Egypt · Specialized Cleanrooms & Laboratories</span>
-          </div>
-        </a>
-
-        <!-- 2-Col Card 4: Riyadh Metro -->
-        <a class="editorial-project-card editorial-card-standard" href="project-detail.html?id=riyadh-metro">
-          <div class="editorial-img-box">
-            <img src="assets/images/projects/riyadh_metro_1.jpg" alt="Riyadh Metro Line 3" />
-            <div class="editorial-card-scrim"></div>
-          </div>
-          <div class="editorial-card-content">
-            <span class="label" data-en="EDC Expertise · ANM Consortium" data-ar="شركة EDC · تحالف ANM">EDC Expertise · ANM Consortium</span>
-            <h3 class="editorial-card-title" data-en="Riyadh Metro (Line 3)" data-ar="مشروع قطار الرياض (المسار 3)">Riyadh Metro (Line 3)</h3>
-            <span class="editorial-card-location" data-en="Riyadh, Saudi Arabia · Underground Stations MEP" data-ar="الرياض، المملكة العربية السعودية · محطات المترو تحت الأرض">Riyadh, Saudi Arabia · Underground Stations MEP</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. INTERACTIVE FREELANCE MEP ESTIMATOR WIDGET -->
-  <section class="section-wrapper" style="background:radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.05) 0%, transparent 70%);">
+  <!-- 7. ABOUT & PROFESSIONAL BACKGROUND (Moved from separate page) -->
+  <section id="about" class="section-wrapper">
     <div class="container">
       <div class="section-heading-block" style="text-align:center;">
-        <span class="label gold-text" data-en="Live Interactive Tool" data-ar="أداة تفاعلية مباشرة">Live Interactive Tool</span>
-        <h2 class="section-heading-title" data-en="Instant MEP Package & Cost Estimator" data-ar="حاسبة باقات المشتريات وتقدير الجداول والوفورات">Instant MEP Package & Cost Estimator</h2>
-        <p style="color:var(--ink-dim);max-width:600px;margin:10px auto 0;" data-en="Adjust your project parameters below to get instant turnaround timeline and estimated cost savings." data-ar="حدد مساحة مشروعك ونوع الخدمات المطلوبة لحساب المدة التقديرية للتسليم ومعدل التوفير الفوري.">Adjust your project parameters below to get instant turnaround timeline and estimated cost savings.</p>
+        <span class="label gold-text" data-en="Professional Background" data-ar="?????? ??????? ????????">Professional Background</span>
+        <h2 class="section-heading-title" data-en="About & Engineering Philosophy" data-ar="???? ??? ?????? ?????">About & Engineering Philosophy</h2>
       </div>
 
-      <div class="estimator-box-glass">
-        <!-- Controls Left -->
+      <div class="about-architect-grid" style="margin-top: 40px;">
+        <!-- Portrait Box -->
         <div>
-          <div class="estimator-control-group">
-            <div style="display:flex;justify-content:space-between;align-items:center;">
-              <span class="label" data-en="Built-Up Area (m²)" data-ar="المساحة المبنية للمشروع (م²)">Built-Up Area (m²)</span>
-              <span class="gold-text font-mono" id="estimator-area-val" style="font-weight:700;font-size:1.1rem;">50,000 m²</span>
-            </div>
-            <input type="range" class="estimator-range-slider" id="estimator-area-slider" min="5000" max="250000" step="5000" value="50000" />
-          </div>
-
-          <div class="estimator-control-group">
-            <span class="label" data-en="Select Required Services" data-ar="اختر الخدمات المطلوبة للحزمة">Select Required Services</span>
-            <div class="estimator-chip-select">
-              <div class="estimator-chip active" data-service="BOQ & Quantity Takeoff" data-en="BOQ & Takeoff" data-ar="حصر كميات BOQ">BOQ & Takeoff</div>
-              <div class="estimator-chip active" data-service="Value Engineering Audit" data-en="Value Engineering" data-ar="هندسة القيمة">Value Engineering</div>
-              <div class="estimator-chip" data-service="Subcontract Drafting" data-en="Subcontracts & FIDIC" data-ar="صياغة عقود باطن">Subcontracts & FIDIC</div>
-              <div class="estimator-chip" data-service="Vendor Leveling & RFQs" data-en="Vendor Leveling" data-ar="مقارنة العروض والتفاوض">Vendor Leveling</div>
+          <div class="portrait-frame-box">
+            <img src="assets/images/headshot.jpg" alt="Eng. Mostafa Abdelghany" />
+            <div class="portrait-gold-tag">
+              <i class="fas fa-certificate" style="margin-right:6px;"></i> SCE Registered #1084929
             </div>
           </div>
         </div>
 
-        <!-- Result Right -->
-        <div class="estimator-output-panel">
-          <span class="label" data-en="Estimated Delivery Time" data-ar="مدة التسليم المتوقعة">Estimated Delivery Time</span>
-          <div class="estimator-result-val" id="estimator-duration-display">12 Work Days</div>
-          
-          <div style="margin:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;">
-            <span class="label" data-en="Projected Cost Optimization" data-ar="معدل الوفر المتوقع">Projected Cost Optimization</span>
-            <div style="font-family:var(--font-mono);font-size:1.3rem;color:var(--accent-cyan);font-weight:700;" id="estimator-savings-display">~ SAR 0.7M</div>
+        <!-- Bio & Philosophy -->
+        <div>
+          <h2 class="font-display" style="font-size:2.2rem;font-weight:700;color:var(--ink);margin-bottom:18px;" data-en="Turning Procurement into a Strategic Profit Center" data-ar="????? ????????? ??? ???? ????? ????????? ????????">Turning Procurement into a Strategic Profit Center</h2>
+          <p class="about-bio-text" data-en="With 9+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen." data-ar="????? ???? ?? 9 ????? ?? ????? ??????? ???????? ?????? ??????? ???????? ????????? ?? ???????? ????? ???? ????????? ??????????????? ?????? ????? ????? ????? ??? ????????? ???? ???? ???? ?????.">With 9+ years navigating multi-billion SAR/EGP infrastructure and building projects across Saudi Arabia and Egypt, I lead MEP procurement with an engineer's technical rigor and a financial strategist's cost acumen.</p>
+          <p class="about-bio-text" data-en="Currently serving as MEP Procurement Section Head at Zaid Al Hussain Group in Riyadh, I spearhead major subcontracts, material approvals, FIDIC contract administration, and value engineering initiatives for landmark projects like the King Abdullah International Gardens (SAR 2.63B)." data-ar="???? ?????? ???? ???? ??? ????????? ??????????????? ??????? ??? ?????? ??????? ?? ??????? ???? ???? ?????? ????????? ???????? ??????? ???? ???????? ?????? ?????? ??????? ?????? ??? ????? ????? ??????? ???????? (2.63 ????? ????).">Currently serving as MEP Procurement Section Head at Zaid Al Hussain Group in Riyadh, I spearhead major subcontracts, material approvals, FIDIC contract administration, and value engineering initiatives for landmark projects like the King Abdullah International Gardens (SAR 2.63B).</p>
+
+          <div class="philosophy-callout-card">
+            <div class="philosophy-quote" data-en="&ldquo;Procurement in mega-projects isn't merely buying equipment; it is engineering the commercial backbone that guarantees timely execution, technical compliance, and substantial margin optimization.&rdquo;" data-ar="&ldquo;????????? ?? ???????? ?????? ???? ???? ???? ?????? ?? ?? ????? ?????? ?????? ??????? ???? ???? ??????? ?? ????? ??????? ???????? ??????? ?????? ???? ????? ?????.&rdquo;">&ldquo;Procurement in mega-projects isn't merely buying equipment; it is engineering the commercial backbone that guarantees timely execution, technical compliance, and substantial margin optimization.&rdquo;</div>
           </div>
 
-          <a class="btn-pill-primary" id="estimator-whatsapp-btn" href="" target="_blank" style="width:100%;justify-content:center;">
-            <i class="fab fa-whatsapp"></i> <span data-en="Book Package on WhatsApp" data-ar="تأكيد وحجز الحزمة عبر واتساب">Book Package on WhatsApp</span>
-          </a>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:30px;">
+            <div style="background:var(--bg-elevated);border:1px solid var(--line);border-radius:var(--radius-md);padding:20px;">
+              <span class="label" data-en="Education" data-ar="?????? ??????">Education</span>
+              <h4 style="font-size:1rem;color:var(--ink);margin-top:6px;" data-en="B.Sc. Mechanical Power Engineering" data-ar="????????? ????? ????? ???????????">B.Sc. Mechanical Power Engineering</h4>
+              <span style="font-size:0.85rem;color:var(--ink-dim);" data-en="Benha University (2010 - 2015)" data-ar="????? ???? (2010 - 2015)">Benha University (2010 - 2015)</span>
+            </div>
+            <div style="background:var(--bg-elevated);border:1px solid var(--line);border-radius:var(--radius-md);padding:20px;">
+              <span class="label" data-en="Accreditation" data-ar="???????? ??????">Accreditation</span>
+              <h4 style="font-size:1rem;color:var(--ink);margin-top:6px;" data-en="Saudi Council of Engineers (SCE)" data-ar="?????? ???????? ?????????">Saudi Council of Engineers (SCE)</h4>
+              <span style="font-size:0.85rem;color:var(--ink-dim);" data-en="Professional Member #1084929" data-ar="????? ????? #1084929">Professional Member #1084929</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1221,9 +1098,7 @@ def build_contact():
 # Write all pages
 pages = {
     "index.html": build_index(),
-    "about.html": build_about(),
     "services.html": build_services(),
-    "software.html": build_software(),
     "projects.html": build_projects(),
     "project-detail.html": build_project_detail(),
     "experience.html": build_experience(),
@@ -1237,4 +1112,7 @@ for name, content in pages.items():
         f.write(content)
     print(f"Generated Rich Expanded V3: {name} ({len(content.encode('utf-8')):,} bytes)")
 
-print("\nAll 9 Expanded Multi-Page files generated successfully!")
+print("\nAll 7 Expanded Multi-Page files generated successfully!")
+
+
+
