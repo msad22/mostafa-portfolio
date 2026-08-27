@@ -132,10 +132,10 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const name = document.getElementById('form-name')?.value || '';
             const company = document.getElementById('form-company')?.value || '';
-            const service = document.getElementById('form-service')?.value || 'Tender Pricing & BOQ';
+            const service = document.getElementById('form-service')?.value || 'Full-Time Job Opportunity';
             const message = document.getElementById('form-message')?.value || '';
 
-            const fullBody = `*Client Inquiry / استفسار تعاقد*\nName: ${name}\nCompany: ${company}\nService: ${service}\n\nProject Scope & Message:\n${message}`;
+            const fullBody = `*New Inquiry / رسالة جديدة*\nName: ${name}\nCompany: ${company}\nReason: ${service}\n\nMessage:\n${message}`;
             const waUrl = `https://wa.me/966502582122?text=${encodeURIComponent(fullBody)}`;
             
             window.open(waUrl, '_blank');

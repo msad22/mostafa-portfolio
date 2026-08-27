@@ -232,7 +232,68 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // -------------------------------------------------------------
-    // 5. Interactive Freelance Package Estimator
+    // 5. Scroll Reveal — brings existing content to life on scroll.
+    // Uses the .animate-on-scroll / .is-visible system already
+    // defined in styles/animations.css. Exposed on window so
+    // scripts that render content after DOMContentLoaded (project
+    // cards, project-detail chips) can call it again on new nodes.
+    // -------------------------------------------------------------
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealIO = (!prefersReducedMotion && 'IntersectionObserver' in window)
+        ? new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealIO.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' })
+        : null;
+
+    const REVEAL_SELECTORS = [
+        '.section-heading-block',
+        '.about-bio-text',
+        '.philosophy-callout-card',
+        '.tilt-card-item',
+        '.workflow-step',
+        '.service-dark-card',
+        '.pricing-plan-card',
+        '.cert-perspective-card',
+        '.contact-card-box',
+        '.stat-cell',
+        '.timeline-station',
+        '.meta-sheet-card',
+        '.editorial-project-card'
+    ].join(', ');
+
+    const initScrollReveal = (root) => {
+        const scope = root || document;
+        scope.querySelectorAll(REVEAL_SELECTORS).forEach((el) => {
+            if (el.classList.contains('animate-on-scroll') || el.classList.contains('is-visible')) return;
+            el.classList.add('animate-on-scroll');
+            const parent = el.parentElement;
+            const siblingIndex = parent ? Array.from(parent.children).indexOf(el) % 6 : 0;
+            el.style.transitionDelay = (siblingIndex * 90) + 'ms';
+            if (revealIO) {
+                revealIO.observe(el);
+            } else {
+                el.classList.add('is-visible');
+            }
+        });
+    };
+
+    window.ScrollReveal = { init: initScrollReveal };
+    // Deferred to window 'load' (not DOMContentLoaded) so image loading has
+    // already settled layout — observing too early can make below-fold
+    // elements register as "in view" before late-loading images push them down.
+    if (document.readyState === 'complete') {
+        initScrollReveal(document);
+    } else {
+        window.addEventListener('load', () => initScrollReveal(document));
+    }
+
+    // -------------------------------------------------------------
+    // 6. Interactive Freelance Package Estimator
     // -------------------------------------------------------------
     const areaSlider = document.getElementById('estimator-area-slider');
     const areaValDisplay = document.getElementById('estimator-area-val');

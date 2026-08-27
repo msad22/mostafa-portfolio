@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             container.appendChild(card);
         });
+
+        if (window.ScrollReveal) window.ScrollReveal.init(container);
     };
 
     // Initial render
@@ -92,4 +94,48 @@ document.addEventListener('DOMContentLoaded', () => {
             renderProjects();
         });
     }
+});
+
+/**
+ * Home page "Featured Projects" preview grid (index.html).
+ * Renders the featured:true entries so real project photos and
+ * results are visible while scrolling the home page, instead of
+ * living only behind the Projects nav tab.
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    const homeGrid = document.getElementById('home-featured-projects-grid');
+    if (!homeGrid || typeof PROJECTS_DATA === 'undefined') return;
+
+    const renderHomeFeatured = () => {
+        const isAr = document.documentElement.getAttribute('lang') === 'ar';
+        homeGrid.innerHTML = '';
+
+        PROJECTS_DATA.filter(p => p.featured).forEach((p, idx) => {
+            const title = isAr ? p.titleAr : p.titleEn;
+            const company = isAr ? p.companyAr : p.companyEn;
+            const location = isAr ? p.locationAr : p.locationEn;
+            const value = isAr ? (p.valueAr || '') : (p.valueEn || '');
+
+            const card = document.createElement('a');
+            card.href = `project-detail.html?id=${p.id}`;
+            card.className = `editorial-project-card ${idx === 0 ? 'editorial-card-flagship' : 'editorial-card-standard'}`;
+            card.innerHTML = `
+                <div class="editorial-img-box">
+                    <img src="${p.coverImage}" alt="${title}" loading="lazy">
+                    <div class="editorial-card-scrim"></div>
+                </div>
+                <div class="editorial-card-content">
+                    <span class="label" style="color:var(--accent);">${company} ${value ? '· ' + value : ''}</span>
+                    <h3 class="editorial-card-title">${title}</h3>
+                    <span class="editorial-card-location">${location}</span>
+                </div>
+            `;
+            homeGrid.appendChild(card);
+        });
+
+        if (window.ScrollReveal) window.ScrollReveal.init(homeGrid);
+    };
+
+    renderHomeFeatured();
+    window.addEventListener('languageChanged', renderHomeFeatured);
 });
